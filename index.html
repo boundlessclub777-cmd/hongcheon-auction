@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>강원 홍천군 개야리 전원주택 경매 | 국책사업 토지보상 이중수익</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Malgun Gothic', sans-serif;
+    line-height: 1.7;
+    color: #1a1a1a;
+    background: #f4f5f7;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0 2px 24px rgba(0,0,0,0.06);
+  }
+
+  /* ===== HERO ===== */
+  .hero {
+    position: relative;
+    background: linear-gradient(135deg, #0d4f3c 0%, #1a7a5e 60%, #2a9d7f 100%);
+    color: #fff;
+    padding: 48px 28px 44px;
+    text-align: center;
+    overflow: hidden;
+  }
+  .hero::after {
+    content: "";
+    position: absolute;
+    bottom: -1px; left: 0; right: 0;
+    height: 40px;
+    background: #fff;
+    clip-path: polygon(0 100%, 100% 100%, 100% 0, 50% 60%, 0 0);
+  }
+  .hero .badge {
+    display: inline-block;
+    background: rgba(255,255,255,0.18);
+    border: 1px solid rgba(255,255,255,0.35);
+    padding: 6px 16px;
+    border-radius: 30px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-bottom: 18px;
+    backdrop-filter: blur(4px);
+  }
+  .hero h1 {
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 1.35;
+    margin-bottom: 14px;
+    letter-spacing: -0.5px;
+  }
+  .hero .sub {
+    font-size: 16px;
+    opacity: 0.95;
+    font-weight: 400;
+  }
+  .hero .discount {
+    display: inline-block;
+    margin-top: 22px;
+    background: #ff5252;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 800;
+    padding: 10px 28px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(255,82,82,0.4);
+  }
+
+  /* ===== SECTION ===== */
+  .section { padding: 34px 28px; border-bottom: 1px solid #eef0f2; }
+  .section:last-child { border-bottom: none; }
+  .section-title {
+    font-size: 21px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    letter-spacing: -0.5px;
+  }
+  .section-title .icon { font-size: 24px; }
+  .section-title.green { color: #0d4f3c; }
+  .section-title.red { color: #d32f2f; }
+
+  /* ===== KEY POINTS ===== */
+  .keypoints {
+    display: grid;
+    gap: 14px;
+  }
+  .kp {
+    background: linear-gradient(135deg, #f0f9f5 0%, #e8f5ee 100%);
+    border-left: 4px solid #2a9d7f;
+    border-radius: 10px;
+    padding: 16px 18px;
+  }
+  .kp .num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px; height: 26px;
+    background: #2a9d7f;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: 8px;
+  }
+  .kp .kp-title { font-weight: 700; font-size: 16px; color: #0d4f3c; display: inline; }
+  .kp .kp-body { font-size: 14.5px; color: #444; margin-top: 8px; }
+
+  /* ===== TABLE ===== */
+  .info-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14.5px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 0 1px #e6e8ea;
+  }
+  .info-table th, .info-table td {
+    padding: 13px 16px;
+    text-align: left;
+    border-bottom: 1px solid #eef0f2;
+  }
+  .info-table th {
+    background: #f7f9fa;
+    color: #555;
+    font-weight: 600;
+    width: 34%;
+    white-space: nowrap;
+  }
+  .info-table td { font-weight: 500; }
+  .info-table tr:last-child th, .info-table tr:last-child td { border-bottom: none; }
+  .highlight-row td { color: #d32f2f; font-weight: 800; font-size: 16px; }
+  .highlight-row th { background: #fff5f5; }
+
+  /* ===== CALLOUT ===== */
+  .callout {
+    background: #fffbeb;
+    border: 1px solid #fde68a;
+    border-radius: 12px;
+    padding: 18px 20px;
+    margin-top: 16px;
+    font-size: 14.5px;
+  }
+  .callout.red {
+    background: #fef2f2;
+    border-color: #fecaca;
+  }
+  .callout strong { color: #b45309; }
+  .callout.red strong { color: #dc2626; }
+
+  /* ===== SIM ===== */
+  .sim {
+    background: #0d4f3c;
+    border-radius: 14px;
+    padding: 26px 22px;
+    color: #fff;
+  }
+  .sim .step {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 12px 0;
+  }
+  .sim .step .dot {
+    flex-shrink: 0;
+    width: 34px; height: 34px;
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 700;
+  }
+  .sim .step .txt { font-size: 15px; }
+  .sim .arrow { text-align: center; color: rgba(255,255,255,0.5); font-size: 18px; line-height: 0.6; }
+  .sim .step.final { background: #2a9d7f; margin: 8px -10px 0; padding: 14px; border-radius: 10px; }
+  .sim .step.final .dot { background: #fff; color: #2a9d7f; }
+  .sim .step.final .txt { font-weight: 700; }
+
+  /* ===== CHECKLIST ===== */
+  .checklist { display: grid; gap: 10px; }
+  .check-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    background: #f7f9fa;
+    border-radius: 8px;
+    padding: 12px 14px;
+    font-size: 14.5px;
+  }
+  .check-item .ck { color: #2a9d7f; font-weight: 800; flex-shrink: 0; }
+
+  /* ===== TARGET ===== */
+  .target-list { display: grid; gap: 12px; }
+  .target {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    border: 1px solid #e6e8ea;
+    border-radius: 10px;
+    padding: 14px 16px;
+  }
+  .target .emoji { font-size: 22px; }
+  .target .t-title { font-weight: 700; font-size: 15px; }
+  .target .t-desc { font-size: 13.5px; color: #666; margin-top: 2px; }
+
+  /* ===== CTA ===== */
+  .cta {
+    background: linear-gradient(135deg, #0d4f3c 0%, #1a7a5e 100%);
+    color: #fff;
+    text-align: center;
+    padding: 40px 28px;
+  }
+  .cta h2 { font-size: 24px; font-weight: 800; margin-bottom: 10px; }
+  .cta p { opacity: 0.92; margin-bottom: 24px; font-size: 15px; }
+  .cta-phone {
+    display: inline-block;
+    background: #fff;
+    color: #0d4f3c;
+    font-size: 22px;
+    font-weight: 800;
+    padding: 16px 40px;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+  }
+  .cta .auction-line { margin-top: 18px; font-size: 14px; opacity: 0.85; }
+
+  /* ===== LINK BTN ===== */
+  .link-btn {
+    display: block;
+    background: #03c75a;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 16px;
+    border-radius: 10px;
+    margin-top: 18px;
+    font-size: 15px;
+  }
+
+  /* ===== IMAGES ===== */
+  .hero-photo {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    display: block;
+  }
+  .doc-img {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #e6e8ea;
+    margin-top: 14px;
+    display: block;
+  }
+  .img-caption {
+    font-size: 12.5px;
+    color: #888;
+    text-align: center;
+    margin-top: 6px;
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    margin-top: 16px;
+  }
+  .gallery img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    cursor: pointer;
+  }
+  .gallery img.wide { grid-column: span 2; aspect-ratio: 16 / 7; }
+
+  .disclaimer {
+    font-size: 12px;
+    color: #999;
+    padding: 22px 28px;
+    background: #fafbfc;
+    text-align: center;
+    line-height: 1.6;
+  }
+
+  @media (max-width: 480px) {
+    .hero h1 { font-size: 25px; }
+    .section { padding: 28px 20px; }
+    .hero { padding: 40px 20px 40px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- HERO -->
+  <header class="hero">
+    <span class="badge">🏞️ 홍천강 리버뷰 · 국책사업 편입</span>
+    <h1>강원 홍천군 개야리<br>전원주택 경매</h1>
+    <p class="sub">국책사업 편입 확인! <strong>경매 + 토지보상</strong> 이중 수익 구조</p>
+    <div class="discount">감정가 대비 34% 하락</div>
+  </header>
+
+  <!-- 대표 사진 -->
+  <img class="hero-photo" src="images/house1.jpg" alt="홍천강 리버뷰 흰색 2층 전원주택 전경">
+
+  <!-- 인트로 -->
+  <section class="section">
+    <p style="font-size:15.5px; color:#333;">
+      단순한 경매 물건이 아닙니다.<br>
+      <strong style="color:#0d4f3c;">하천 정비사업에 편입이 확인된</strong>, 2026년 토지보상이 가능한 특수 물건입니다.
+    </p>
+    <div class="callout">
+      <strong>홍천강 리버뷰 전원주택</strong> · 감정가 34% 하락 + <strong>100평 토지보상</strong>까지 더해진,
+      이중 수익 구조의 희소 물건입니다.
+      바로 위 단독주택이 <strong>평당 350만원</strong> 매매 진행 중 — 낙찰만 받으면 수익 보장.
+    </div>
+    <a class="link-btn" href="https://new.land.naver.com/houses?ms=2AQVYP,3zIJp0,18&a=DDDGG:JWJT:SGJT:VL&e=RETAIL&articleNo=2624054306" target="_blank">
+      🟢 네이버페이 부동산에서 매물 보기
+    </a>
+    <img class="doc-img" src="images/naver-land.png" alt="네이버페이 부동산 - 바로 위 단독주택 매매 4억 5,000만원">
+    <p class="img-caption">▲ 경매 물건 바로 위 단독주택, 네이버 부동산 매매 4억 5,000만원 (평당 약 350만원)</p>
+  </section>
+
+  <!-- 물건 개요 -->
+  <section class="section">
+    <h2 class="section-title green"><span class="icon">📍</span>물건 개요</h2>
+    <div class="callout red" style="margin-top:0; margin-bottom:18px;">
+      <strong>"이전 낙찰자 농취증 미납으로 불허가"</strong><br>
+      대지 300평 + 전(田) 192평 → 192평만 농취증 받으면 되고, 발급에는 이상 없음.
+      미납 사유는 낙찰자 개인 사유로 <strong>물건 하자 아님</strong>. (입찰 보증금 20% 준비 필요)
+    </div>
+    <table class="info-table">
+      <tr><th>사건번호</th><td>2024타경2148 (춘천지방법원 본원)</td></tr>
+      <tr><th>소재지</th><td>강원특별자치도 홍천군 서면 개야리 322-6 외 1필지</td></tr>
+      <tr><th>물건종별</th><td>주택 (토지·건물 일괄매각)</td></tr>
+      <tr><th>감정가</th><td>551,536,340원 (토지 평당 112만원)</td></tr>
+      <tr class="highlight-row"><th>5차 최저가</th><td>189,177,000원 (감정가 34%)</td></tr>
+      <tr><th>보증금</th><td>37,835,499원 (최저가 20%)</td></tr>
+      <tr><th>토지면적</th><td>1,630㎡ (493.08평)</td></tr>
+      <tr><th>건물면적</th><td>336.08㎡ (101.66평)</td></tr>
+      <tr><th>매각기일</th><td>2026.06.15(月) 10:00</td></tr>
+      <tr><th>경매 담당</th><td>경매 2계 (033-259-9710)</td></tr>
+    </table>
+    <img class="doc-img" src="images/auction-detail.png" alt="옥션원 경매 상세 정보 - 2024타경2148 춘천지방법원">
+    <p class="img-caption">▲ 경매 상세 정보 (2024타경2148, 춘천지방법원) — 감정가·입찰 이력</p>
+  </section>
+
+  <!-- 입지 장점 -->
+  <section class="section">
+    <h2 class="section-title green"><span class="icon">🏡</span>입지 장점</h2>
+    <div class="keypoints">
+      <div class="kp">
+        <span class="num">1</span><span class="kp-title">홍천강 바로 앞 — 진짜 리버뷰</span>
+        <div class="kp-body">
+          배산임수 구조 — 뒤에는 산, 앞에는 강. 사계절 자연을 품은 최적의 입지.
+          개야리 유원지가 인근으로 캠핑·물놀이·레저가 코앞. <strong>서울 잠실 기준 약 1시간</strong>, 세컨하우스로도 최적.
+        </div>
+      </div>
+      <div class="kp">
+        <span class="num">2</span><span class="kp-title">임차인 없음 — 명도 리스크 ZERO</span>
+        <div class="kp-body">
+          집주인 거주 외 특이사항 없음. 300평 이하 용도이므로 주말농장 목적 농취증 발급도 문제없음.
+        </div>
+      </div>
+      <div class="kp">
+        <span class="num">3</span><span class="kp-title">건물 규모</span>
+        <div class="kp-body">
+          1층 41평 / 2층 13평 (총 54평, 등기부 기준)<br>
+          실제 건물면적 336.08㎡ (101.66평) — 부속 창고·차고 포함
+        </div>
+      </div>
+    </div>
+    <div class="gallery">
+      <img src="images/house2.jpg" alt="전원주택 전경 2">
+      <img src="images/house4.jpg" alt="전원주택 마당">
+      <img src="images/house5.jpg" alt="전원주택 측면">
+      <img src="images/house6.jpg" alt="전원주택 주변 환경">
+      <img class="wide" src="images/house7.jpg" alt="전원주택 자연환경 파노라마">
+    </div>
+    <p class="img-caption">▲ 흰색 2층 단독주택 · 서양식 박공지붕 · 넓은 마당 · 울창한 자연환경</p>
+  </section>
+
+  <!-- 핵심 투자 포인트 -->
+  <section class="section" style="background:#fffdf5;">
+    <h2 class="section-title red"><span class="icon">🔥</span>핵심 투자 포인트<br>— 국책사업 편입 토지보상</h2>
+    <p style="font-size:15px; color:#444; margin-bottom:18px;">
+      이 물건이 단순 전원주택 경매와 <strong>결정적으로 다른 이유</strong>가 바로 이것입니다.
+    </p>
+
+    <div class="gallery">
+      <img src="images/doc1.png" alt="한국부동산원 토지보상 공문 1">
+      <img src="images/doc2.png" alt="한국부동산원 토지보상 공문 2">
+    </div>
+    <p class="img-caption">▲ 한국부동산원 발송 공문 (2026.02) — 홍천강 개야1지구 하천정비사업 보상설명회 안내</p>
+
+    <h3 style="font-size:16px; font-weight:700; margin:22px 0 10px; color:#0d4f3c;">📄 공문 내용 요약</h3>
+    <table class="info-table">
+      <tr><th>발신</th><td>한국부동산원 (공익보상2부)</td></tr>
+      <tr><th>사업명</th><td>홍천강 개야1지구 하천정비사업</td></tr>
+      <tr><th>사업시행자</th><td>기후에너지환경부 원주지방환경청</td></tr>
+      <tr><th>보상설명회</th><td>2026.02.10. 홍천군 서면 형정복지센터 2층</td></tr>
+      <tr><th>출입기간</th><td>2026.02. ~ 사업종료시</td></tr>
+      <tr><th>보상절차</th><td>기본조사 → 감정평가 → 보상액산정 → 보상협의계약</td></tr>
+    </table>
+
+    <h3 style="font-size:16px; font-weight:700; margin:22px 0 10px; color:#0d4f3c;">🗺️ 편입 현황</h3>
+    <div class="gallery">
+      <img src="images/cadastral1.png" alt="토지이용규제 확인도 - 하천구역 편입">
+      <img src="images/cadastral2.png" alt="토지이음 위성사진 - 322-6, 322-10 편입 현황">
+    </div>
+    <p class="img-caption">▲ 토지이용규제 확인도 + 위성사진 — 322-6(대)·322-10(전) 중 약 100평이 홍천강 하천구역 편입</p>
+    <div class="callout">
+      지적도 분석 결과 <strong>322-6(대지), 322-10(전)</strong> 필지가 홍천강 하천구역에 <strong>약 100평 편입</strong> (토지보상 대상)<br><br>
+      · 용도지역: <strong>계획관리지역</strong> (개발 가능성 있는 용도)<br>
+      · 영농여건불리농지 → 전용(轉用) 상대적으로 용이<br>
+      · 좌측(서쪽) 홍천강, 동쪽 개야로(포장 2차선) 접면
+    </div>
+    <div class="callout red">
+      💰 토지 감정평가액 전체 약 <strong>3.2억</strong> 수준<br>
+      하천구역 편입 100평 = 전체 493평 중 약 20% → <strong>보상금 추정 약 6,000만~1억 내외</strong><br>
+      <span style="font-size:12.5px; color:#999;">(실제 보상금은 공식 감정평가 후 확정)</span>
+    </div>
+    <img class="doc-img" src="images/status-note.png" alt="경매 현황위치 및 참고사항 - 하천정비사업 100평 수용보상 예정 제보">
+    <p class="img-caption">▲ 경매 물건 현황·참고사항 — "홍천강 개야1지구 하천정비사업, 100평 수용보상 예정" 관련 제보 명시</p>
+  </section>
+
+  <!-- 투자 시뮬레이션 -->
+  <section class="section">
+    <h2 class="section-title green"><span class="icon">💰</span>투자 구조 시뮬레이션</h2>
+    <div class="sim">
+      <div class="step"><span class="dot">1</span><span class="txt">경매 낙찰 (2.7억~3.5억 수준)</span></div>
+      <div class="arrow">▼</div>
+      <div class="step"><span class="dot">2</span><span class="txt">전원주택 실거주 또는 임대 활용</span></div>
+      <div class="arrow">▼</div>
+      <div class="step"><span class="dot">3</span><span class="txt">홍천강 하천정비사업 보상협의</span></div>
+      <div class="arrow">▼</div>
+      <div class="step"><span class="dot">4</span><span class="txt">토지 100평 보상금 수령 (감정평가 기준)</span></div>
+      <div class="arrow">▼</div>
+      <div class="step final"><span class="dot">✓</span><span class="txt">실질 취득원가 대폭 절감</span></div>
+    </div>
+  </section>
+
+  <!-- 체크리스트 -->
+  <section class="section">
+    <h2 class="section-title green"><span class="icon">⚠️</span>투자 전 확인 체크리스트</h2>
+    <div class="checklist">
+      <div class="check-item"><span class="ck">✔</span><div><strong>편입 범위 확정</strong> — 100평 전체 편입 vs 추가 편입 가능성 (측량 결과 확인)</div></div>
+      <div class="check-item"><span class="ck">✔</span><div><strong>보상 기준</strong> — 시점 및 감정평가 금액 추이 검토</div></div>
+      <div class="check-item"><span class="ck">✔</span><div><strong>건물 보상 여부</strong> — 토지 편입분만 보상 vs 건물 철거 보상 여부</div></div>
+      <div class="check-item"><span class="ck">✔</span><div><strong>사업 타임라인</strong> — 보상협의 → 불성립 시 수용재결 → 최종 보상까지 기간</div></div>
+      <div class="check-item"><span class="ck">✔</span><div><strong>농취증</strong> — 주말농장 목적 취득 시 문제없음 (300평 이하)</div></div>
+      <div class="check-item"><span class="ck">✔</span><div><strong>잔금 기한</strong> — 매각 후 통상 1개월 내 잔금 납부</div></div>
+    </div>
+  </section>
+
+  <!-- 결론 / 타겟 -->
+  <section class="section">
+    <h2 class="section-title green"><span class="icon">📢</span>이 물건, 어떤 분께 맞을까요?</h2>
+    <div class="target-list">
+      <div class="target"><span class="emoji">📈</span><div><div class="t-title">단기 차익형 투자자</div><div class="t-desc">감정가 34% 낙찰 + 보상금 별도 수령으로 이중 수익</div></div></div>
+      <div class="target"><span class="emoji">🏡</span><div><div class="t-title">전원 거주 희망자</div><div class="t-desc">보상 전까지 실거주 가능, 이후 보상 수령으로 원가 절감</div></div></div>
+      <div class="target"><span class="emoji">🔰</span><div><div class="t-title">소액 경매 입문자</div><div class="t-desc">명도 부담 없고, 국책사업 보상이라 출구전략 명확</div></div></div>
+      <div class="target"><span class="emoji">🏞️</span><div><div class="t-title">세컨하우스 투자자</div><div class="t-desc">홍천강 뷰 리버하우스 + 보상 안전망 겸비</div></div></div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <h2>지금 바로 문의하세요</h2>
+    <p>현장 안내 · 권리분석 · 입찰 상담까지 도와드립니다</p>
+    <a class="cta-phone" href="tel:01000000000">📞 010-0000-0000</a>
+    <div class="auction-line">경매 담당: 춘천지방법원 경매 2계 · 033-259-9710</div>
+  </section>
+
+  <p class="disclaimer">
+    본 자료는 공개된 경매 정보 및 한국부동산원 보상 공문을 바탕으로 작성된 홍보용 자료입니다.<br>
+    실제 보상금·편입 면적·권리관계는 공식 감정평가 및 측량 결과에 따라 달라질 수 있으며,
+    입찰 전 반드시 현장 확인 및 전문가 권리분석을 권장합니다.
+  </p>
+
+</div>
+</body>
+</html>
