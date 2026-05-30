@@ -247,6 +247,26 @@
     font-size: 15px;
   }
 
+  /* ===== STAT GRID ===== */
+  .stat-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin: 18px 0;
+  }
+  .stat {
+    background: #f7f9fa;
+    border: 1px solid #eef0f2;
+    border-radius: 10px;
+    padding: 16px 8px;
+    text-align: center;
+  }
+  .stat-label { font-size: 12.5px; color: #888; margin-bottom: 6px; }
+  .stat-num { font-size: 21px; font-weight: 800; letter-spacing: -0.5px; }
+  .stat-num.gray { color: #9aa0a6; text-decoration: line-through; }
+  .stat-num.red { color: #d32f2f; }
+  .stat-num.green { color: #1a7a5e; }
+
   /* ===== IMAGES ===== */
   .hero-photo {
     width: 100%;
@@ -304,10 +324,10 @@
 
   <!-- HERO -->
   <header class="hero">
-    <span class="badge">🏞️ 홍천강 리버뷰 · 국책사업 편입</span>
-    <h1>강원 홍천군 개야리<br>전원주택 경매</h1>
-    <p class="sub">국책사업 편입 확인! <strong>경매 + 토지보상</strong> 이중 수익 구조</p>
-    <div class="discount">감정가 대비 34% 하락</div>
+    <span class="badge">🏞️ 홍천강 리버뷰 · 국책사업 보상 확정지</span>
+    <h1>2억대에 잡는<br>홍천강 리버뷰 전원주택</h1>
+    <p class="sub">감정가 <strong>5.5억</strong> → 최저가 <strong>1.9억</strong> · 여기에 <strong>토지보상금</strong>까지 더해지는 이중 수익 물건</p>
+    <div class="discount">감정가 대비 34%까지 하락</div>
   </header>
 
   <!-- 대표 사진 -->
@@ -316,16 +336,24 @@
   <!-- 인트로 -->
   <section class="section">
     <p style="font-size:15.5px; color:#333;">
-      단순한 경매 물건이 아닙니다.<br>
-      <strong style="color:#0d4f3c;">하천 정비사업에 편입이 확인된</strong>, 2026년 토지보상이 가능한 특수 물건입니다.
+      이건 단순한 경매 물건이 아닙니다.<br>
+      <strong style="color:#0d4f3c;">한국부동산원 공문으로 토지보상이 확정 진행 중인</strong>,
+      "낙찰가 절감"과 "보상금 수령"이 동시에 가능한 <strong>이중 수익 물건</strong>입니다.
     </p>
+
+    <!-- 한눈에 보는 숫자 -->
+    <div class="stat-grid">
+      <div class="stat"><div class="stat-label">감정가</div><div class="stat-num gray">5.5억</div></div>
+      <div class="stat"><div class="stat-label">현재 최저가</div><div class="stat-num red">1.9억</div></div>
+      <div class="stat"><div class="stat-label">예상 토지보상</div><div class="stat-num green">6천~1억</div></div>
+    </div>
+
     <div class="callout">
-      <strong>홍천강 리버뷰 전원주택</strong> · 감정가 34% 하락 + <strong>100평 토지보상</strong>까지 더해진,
-      이중 수익 구조의 희소 물건입니다.
-      바로 위 단독주택이 <strong>평당 350만원</strong> 매매 진행 중 — 낙찰만 받으면 수익 보장.
+      바로 <strong>위 단독주택</strong>은 지금 네이버 부동산에 <strong>매매 4억 5,000만원</strong>(평당 약 350만원)에 올라와 있습니다.<br>
+      <strong style="color:#0d4f3c;">위는 4.5억, 이 물건은 2억대 낙찰 가능</strong> — 같은 입지에서 가격 차이가 곧 안전마진입니다.
     </div>
     <a class="link-btn" href="https://new.land.naver.com/houses?ms=2AQVYP,3zIJp0,18&a=DDDGG:JWJT:SGJT:VL&e=RETAIL&articleNo=2624054306" target="_blank">
-      🟢 네이버페이 부동산에서 매물 보기
+      🟢 네이버페이 부동산에서 위 주택 시세 확인
     </a>
     <img class="doc-img" src="images/naver-land.png" alt="네이버페이 부동산 - 바로 위 단독주택 매매 4억 5,000만원">
     <p class="img-caption">▲ 경매 물건 바로 위 단독주택, 네이버 부동산 매매 4억 5,000만원 (평당 약 350만원)</p>
@@ -334,10 +362,12 @@
   <!-- 물건 개요 -->
   <section class="section">
     <h2 class="section-title green"><span class="icon">📍</span>물건 개요</h2>
-    <div class="callout red" style="margin-top:0; margin-bottom:18px;">
-      <strong>"이전 낙찰자 농취증 미납으로 불허가"</strong><br>
-      대지 300평 + 전(田) 192평 → 192평만 농취증 받으면 되고, 발급에는 이상 없음.
-      미납 사유는 낙찰자 개인 사유로 <strong>물건 하자 아님</strong>. (입찰 보증금 20% 준비 필요)
+    <div class="callout" style="margin-top:0; margin-bottom:18px; background:#f0f9f5; border-color:#bfe6d4;">
+      <strong style="color:#0d4f3c;">💡 가격이 더 떨어진 이유 = 정보 있는 사람의 기회</strong><br>
+      이전 낙찰자가 <strong>개인 사정</strong>으로 농취증을 미납해 불허가되면서 한 차례 더 유찰됐습니다.
+      <strong>물건 자체의 하자가 아닙니다.</strong> 전(田) 192평만 농취증을 받으면 되고 발급에 문제 없습니다
+      (주말농장 목적, 300평 이하라 발급 용이).<br>
+      <span style="font-size:13px; color:#0d4f3c;">→ 남들이 놓친 한 박자가 곧 더 낮은 진입가입니다. (단, 미납 물건이라 입찰 보증금 20% 준비 필요)</span>
     </div>
     <table class="info-table">
       <tr><th>사건번호</th><td>2024타경2148 (춘천지방법원 본원)</td></tr>
@@ -357,26 +387,28 @@
 
   <!-- 입지 장점 -->
   <section class="section">
-    <h2 class="section-title green"><span class="icon">🏡</span>입지 장점</h2>
+    <h2 class="section-title green"><span class="icon">🏡</span>왜 이 입지가 돈이 되는가</h2>
     <div class="keypoints">
       <div class="kp">
-        <span class="num">1</span><span class="kp-title">홍천강 바로 앞 — 진짜 리버뷰</span>
+        <span class="num">1</span><span class="kp-title">홍천강 바로 앞 — 돈 주고도 못 사는 리버뷰</span>
         <div class="kp-body">
-          배산임수 구조 — 뒤에는 산, 앞에는 강. 사계절 자연을 품은 최적의 입지.
-          개야리 유원지가 인근으로 캠핑·물놀이·레저가 코앞. <strong>서울 잠실 기준 약 1시간</strong>, 세컨하우스로도 최적.
+          뒤에는 산, 앞에는 강. <strong>배산임수 명당</strong>에 사계절 자연을 품은 입지입니다.
+          개야리 유원지가 인근이라 캠핑·물놀이·레저가 코앞 — <strong>서울 잠실 기준 약 1시간</strong>,
+          세컨하우스·펜션 운영지로도 수요가 탄탄합니다.
         </div>
       </div>
       <div class="kp">
-        <span class="num">2</span><span class="kp-title">임차인 없음 — 명도 리스크 ZERO</span>
+        <span class="num">2</span><span class="kp-title">임차인 없음 — 명도 분쟁 리스크 ZERO</span>
         <div class="kp-body">
-          집주인 거주 외 특이사항 없음. 300평 이하 용도이므로 주말농장 목적 농취증 발급도 문제없음.
+          집주인 거주 외 특이사항 없어 <strong>낙찰 후 명도 스트레스가 없습니다.</strong>
+          경매 초보도 부담 없이 접근할 수 있는 깔끔한 권리관계.
         </div>
       </div>
       <div class="kp">
-        <span class="num">3</span><span class="kp-title">건물 규모</span>
+        <span class="num">3</span><span class="kp-title">대지 493평 · 건물 100평의 넉넉한 규모</span>
         <div class="kp-body">
-          1층 41평 / 2층 13평 (총 54평, 등기부 기준)<br>
-          실제 건물면적 336.08㎡ (101.66평) — 부속 창고·차고 포함
+          토지 1,630㎡(493평) · 건물 336㎡(101평, 부속 창고·차고 포함).<br>
+          <strong>2억대에 강원도 홍천강변 100평 주택</strong> — 같은 가격으로 수도권에선 상상하기 어려운 규모입니다.
         </div>
       </div>
     </div>
@@ -392,9 +424,11 @@
 
   <!-- 핵심 투자 포인트 -->
   <section class="section" style="background:#fffdf5;">
-    <h2 class="section-title red"><span class="icon">🔥</span>핵심 투자 포인트<br>— 국책사업 편입 토지보상</h2>
+    <h2 class="section-title red"><span class="icon">🔥</span>이 물건의 진짜 가치<br>— 국책사업 토지보상</h2>
     <p style="font-size:15px; color:#444; margin-bottom:18px;">
-      이 물건이 단순 전원주택 경매와 <strong>결정적으로 다른 이유</strong>가 바로 이것입니다.
+      대부분의 경매 물건은 "싸게 사는 것"이 전부입니다. 그런데 이 물건은
+      <strong style="color:#d32f2f;">사고 난 뒤 보상금이 들어오는 구조</strong>입니다.
+      추측이 아니라 <strong>한국부동산원 공문</strong>으로 확인된 사실입니다.
     </p>
 
     <div class="gallery">
@@ -436,48 +470,43 @@
 
   <!-- 투자 시뮬레이션 -->
   <section class="section">
-    <h2 class="section-title green"><span class="icon">💰</span>투자 구조 시뮬레이션</h2>
+    <h2 class="section-title green"><span class="icon">💰</span>돈이 도는 구조, 한눈에</h2>
     <div class="sim">
-      <div class="step"><span class="dot">1</span><span class="txt">경매 낙찰 (2억~2억5천 수준)</span></div>
+      <div class="step"><span class="dot">1</span><span class="txt">경매 낙찰 <strong>2억~2억5천</strong> 수준</span></div>
       <div class="arrow">▼</div>
-      <div class="step"><span class="dot">2</span><span class="txt">전원주택 실거주 또는 임대 활용</span></div>
+      <div class="step"><span class="dot">2</span><span class="txt">전원주택 실거주 또는 임대·펜션 활용</span></div>
       <div class="arrow">▼</div>
-      <div class="step"><span class="dot">3</span><span class="txt">홍천강 하천정비사업 보상협의</span></div>
+      <div class="step"><span class="dot">3</span><span class="txt">홍천강 하천정비사업 보상협의 (공문 진행 중)</span></div>
       <div class="arrow">▼</div>
-      <div class="step"><span class="dot">4</span><span class="txt">토지 100평 보상금 수령 (감정평가 기준)</span></div>
+      <div class="step"><span class="dot">4</span><span class="txt">토지 100평 보상금 <strong>약 6천~1억</strong> 수령</span></div>
       <div class="arrow">▼</div>
-      <div class="step final"><span class="dot">✓</span><span class="txt">실질 취득원가 대폭 절감</span></div>
+      <div class="step final"><span class="dot">✓</span><span class="txt">실질 취득원가 <strong>1억원대</strong>로 절감</span></div>
     </div>
-  </section>
-
-  <!-- 체크리스트 -->
-  <section class="section">
-    <h2 class="section-title green"><span class="icon">⚠️</span>투자 전 확인 체크리스트</h2>
-    <div class="checklist">
-      <div class="check-item"><span class="ck">✔</span><div><strong>편입 범위 확정</strong> — 100평 전체 편입 vs 추가 편입 가능성 (측량 결과 확인)</div></div>
-      <div class="check-item"><span class="ck">✔</span><div><strong>보상 기준</strong> — 시점 및 감정평가 금액 추이 검토</div></div>
-      <div class="check-item"><span class="ck">✔</span><div><strong>건물 보상 여부</strong> — 토지 편입분만 보상 vs 건물 철거 보상 여부</div></div>
-      <div class="check-item"><span class="ck">✔</span><div><strong>사업 타임라인</strong> — 보상협의 → 불성립 시 수용재결 → 최종 보상까지 기간</div></div>
-      <div class="check-item"><span class="ck">✔</span><div><strong>농취증</strong> — 주말농장 목적 취득 시 문제없음 (300평 이하)</div></div>
-      <div class="check-item"><span class="ck">✔</span><div><strong>잔금 기한</strong> — 매각 후 통상 1개월 내 잔금 납부</div></div>
-    </div>
+    <p style="font-size:13px; color:#888; margin-top:12px; text-align:center;">
+      ※ 위 수치는 낙찰가·감정평가 가정에 따른 예시입니다. 실제 보상금은 공식 감정평가 후 확정됩니다.
+    </p>
   </section>
 
   <!-- 결론 / 타겟 -->
   <section class="section">
-    <h2 class="section-title green"><span class="icon">📢</span>이 물건, 어떤 분께 맞을까요?</h2>
+    <h2 class="section-title green"><span class="icon">📢</span>이런 분이라면, 놓치기 아깝습니다</h2>
     <div class="target-list">
-      <div class="target"><span class="emoji">📈</span><div><div class="t-title">단기 차익형 투자자</div><div class="t-desc">감정가 34% 낙찰 + 보상금 별도 수령으로 이중 수익</div></div></div>
-      <div class="target"><span class="emoji">🏡</span><div><div class="t-title">전원 거주 희망자</div><div class="t-desc">보상 전까지 실거주 가능, 이후 보상 수령으로 원가 절감</div></div></div>
-      <div class="target"><span class="emoji">🔰</span><div><div class="t-title">소액 경매 입문자</div><div class="t-desc">명도 부담 없고, 국책사업 보상이라 출구전략 명확</div></div></div>
-      <div class="target"><span class="emoji">🏞️</span><div><div class="t-title">세컨하우스 투자자</div><div class="t-desc">홍천강 뷰 리버하우스 + 보상 안전망 겸비</div></div></div>
+      <div class="target"><span class="emoji">📈</span><div><div class="t-title">단기 차익형 투자자</div><div class="t-desc">감정가 34% 낙찰 + 보상금 별도 수령 = 두 번 버는 구조</div></div></div>
+      <div class="target"><span class="emoji">🏡</span><div><div class="t-title">전원 거주 희망자</div><div class="t-desc">보상 전까지 실거주, 이후 보상금으로 취득원가까지 절감</div></div></div>
+      <div class="target"><span class="emoji">🔰</span><div><div class="t-title">소액 경매 입문자</div><div class="t-desc">명도 부담 없고, 국책사업 보상이라 출구전략이 명확</div></div></div>
+      <div class="target"><span class="emoji">🏞️</span><div><div class="t-title">세컨하우스·펜션 투자자</div><div class="t-desc">홍천강 리버뷰 + 보상 안전망까지 갖춘 희소 매물</div></div></div>
+    </div>
+    <div class="callout red" style="margin-top:20px; text-align:center;">
+      <strong style="font-size:16px;">📅 매각기일 2026.06.15(月) 10:00</strong><br>
+      경매는 <strong>기일이 지나면 끝</strong>입니다. 같은 입지·같은 보상 조건의 물건은 다시 나오기 어렵습니다.<br>
+      <strong style="color:#dc2626;">입찰 전 권리분석·현장 확인은 필수 — 지금 상담받으세요.</strong>
     </div>
   </section>
 
   <!-- CTA -->
   <section class="cta">
     <h2>지금 바로 문의하세요</h2>
-    <p>현장 안내 · 권리분석 · 입찰 상담까지 도와드립니다</p>
+    <p>현장 안내 · 권리분석 · 입찰 전략까지 1:1로 도와드립니다</p>
     <div class="auction-line">경매 담당: 춘천지방법원 경매 2계 · 033-259-9710</div>
   </section>
 
