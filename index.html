@@ -247,7 +247,45 @@
     font-size: 15px;
   }
 
+  /* ===== PRICE DROP ===== */
+  .price-drop {
+    background: linear-gradient(135deg, #fff5f5 0%, #fff0f0 100%);
+    border: 1.5px solid #fecaca;
+    border-radius: 14px;
+    padding: 20px 18px;
+    margin: 20px 0 14px;
+    text-align: center;
+  }
+  .pd-row {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 10px;
+  }
+  .pd-label { font-size: 14px; color: #777; }
+  .pd-old {
+    font-size: 21px; font-weight: 700; color: #9aa0a6;
+    text-decoration: line-through;
+  }
+  .pd-new { font-size: 30px; font-weight: 900; color: #d32f2f; letter-spacing: -1px; }
+  .pd-arrow {
+    font-size: 12.5px; color: #d32f2f; font-weight: 700;
+    margin: 8px 0;
+  }
+  .pd-badge {
+    display: inline-block;
+    margin-top: 12px;
+    background: #d32f2f;
+    color: #fff;
+    font-size: 14.5px;
+    padding: 8px 18px;
+    border-radius: 30px;
+    box-shadow: 0 4px 14px rgba(211,47,47,0.3);
+  }
+  .pd-badge strong { font-size: 16px; }
+
   /* ===== STAT GRID ===== */
+  .stat-sub { font-size: 11px; color: #aaa; margin-top: 3px; }
   .stat-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -341,16 +379,30 @@
       "낙찰가 절감"과 "보상금 수령"이 동시에 가능한 <strong>이중 수익 물건</strong>입니다.
     </p>
 
+    <!-- 가격 하락 임팩트 -->
+    <div class="price-drop">
+      <div class="pd-row">
+        <span class="pd-label">감정가</span>
+        <span class="pd-old">5억 5,153만원</span>
+      </div>
+      <div class="pd-arrow">↓ &nbsp;5차까지 유찰, 가격 폭락 &nbsp;↓</div>
+      <div class="pd-row">
+        <span class="pd-label">현재 최저가</span>
+        <span class="pd-new">1억 8,917만원</span>
+      </div>
+      <div class="pd-badge">감정가의 <strong>34%</strong> · <strong>3억 6천만원</strong> 빠졌습니다</div>
+    </div>
+
     <!-- 한눈에 보는 숫자 -->
     <div class="stat-grid">
-      <div class="stat"><div class="stat-label">감정가</div><div class="stat-num gray">5.5억</div></div>
-      <div class="stat"><div class="stat-label">현재 최저가</div><div class="stat-num red">1.9억</div></div>
-      <div class="stat"><div class="stat-label">예상 토지보상</div><div class="stat-num green">6천~1억</div></div>
+      <div class="stat"><div class="stat-label">토지 평단가</div><div class="stat-num gray">112만원</div><div class="stat-sub">감정 기준</div></div>
+      <div class="stat"><div class="stat-label">실질 평단가</div><div class="stat-num red">약 38만원</div><div class="stat-sub">최저가 기준</div></div>
+      <div class="stat"><div class="stat-label">예상 토지보상</div><div class="stat-num green">6천~1억</div><div class="stat-sub">별도 수령</div></div>
     </div>
 
     <div class="callout">
       바로 <strong>위 단독주택</strong>은 지금 네이버 부동산에 <strong>매매 4억 5,000만원</strong>(평당 약 350만원)에 올라와 있습니다.<br>
-      <strong style="color:#0d4f3c;">위는 4.5억, 이 물건은 2억대 낙찰 가능</strong> — 같은 입지에서 가격 차이가 곧 안전마진입니다.
+      <strong style="color:#0d4f3c;">위는 4.5억, 이 물건은 2억대 낙찰 가능</strong> — 같은 입지에서 이 가격 차이가 곧 안전마진입니다.
     </div>
     <a class="link-btn" href="https://new.land.naver.com/houses?ms=2AQVYP,3zIJp0,18&a=DDDGG:JWJT:SGJT:VL&e=RETAIL&articleNo=2624054306" target="_blank">
       🟢 네이버페이 부동산에서 위 주택 시세 확인
