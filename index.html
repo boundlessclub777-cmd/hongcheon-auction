@@ -2,467 +2,703 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>강원 홍천군 개야리 전원주택 경매 | 국책사업 토지보상 이중수익</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>홍천강 개야리 전원주택 경매</title>
+<meta name="description" content="춘천지방법원 2024타경2148. 최저가 1억 8,917만원, 한국부동산원 보상계획 공고로 하천정비 편입 385㎡(116.5평) 확정. 낙찰가 절감과 토지보상이 함께 가는 물건.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="최저가 1.89억 홍천강 전원주택 · 토지보상 385㎡ 공고 확정">
+<meta property="og:description" content="한국부동산원 2026.9.29 보상계획 통지. 편입 116.5평 확정, 건물은 그대로. 직전 낙찰가 5.11억 물건을 1.89억부터.">
+<meta property="og:image" content="https://boundlessclub777-cmd.github.io/hongcheon-auction/images/house1.jpg">
+<meta property="og:url" content="https://boundlessclub777-cmd.github.io/hongcheon-auction/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@700;900&family=Noto+Sans+KR:wght@400;500;700&display=swap">
 <style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Malgun Gothic', sans-serif;
-    line-height: 1.7;
-    color: #1a1a1a;
-    background: #f4f5f7;
-    -webkit-font-smoothing: antialiased;
+  :root {
+    --ink: #1c2534;
+    --ink-2: #3a4356;
+    --muted: #6d675c;
+    --river: #0f6a70;
+    --river-soft: #e4f1f1;
+    --river-line: #bcdcdc;
+    --seal: #c3392b;
+    --seal-soft: #fbeae7;
+    --seal-line: #f0c4bc;
+    --paper: #f5f2ea;
+    --paper-2: #ebe6da;
+    --card: #ffffff;
+    --rule: #e3ded2;
+    --sans: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+    --serif: 'Noto Serif KR', 'Apple SD Gothic Neo', 'Nanum Myeongjo', serif;
   }
-  .wrap {
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: var(--sans);
+    color: var(--ink);
+    background: var(--paper);
+    line-height: 1.7;
+    font-size: 15.5px;
+    -webkit-font-smoothing: antialiased;
+    font-variant-numeric: tabular-nums;
+  }
+  img { max-width: 100%; display: block; }
+  strong { font-weight: 700; }
+  a { color: var(--river); }
+  .page {
     max-width: 720px;
     margin: 0 auto;
-    background: #fff;
-    box-shadow: 0 2px 24px rgba(0,0,0,0.06);
+    background: var(--card);
+    box-shadow: 0 2px 30px rgba(28,37,52,0.08);
+  }
+  .section { padding: 36px 26px; border-bottom: 1px solid var(--rule); }
+  .section.tinted { background: var(--paper); }
+  .eyebrow {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--river);
+    margin-bottom: 10px;
+  }
+  .eyebrow.seal { color: var(--seal); }
+  h1, h2, h3, .benefit .t, .stat .v, .pr .num, .flow .v, .cmp .v { word-break: keep-all; overflow-wrap: anywhere; }
+  h2 {
+    font-family: var(--serif);
+    font-size: 23px;
+    font-weight: 900;
+    line-height: 1.35;
+    letter-spacing: -0.3px;
+    margin-bottom: 14px;
+    text-wrap: balance;
+  }
+  h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 26px 0 10px;
+    color: var(--ink);
+  }
+  .lede { font-size: 16px; color: var(--ink-2); margin-bottom: 20px; }
+  .lede strong { color: var(--ink); }
+  .note { font-size: 13px; color: var(--muted); line-height: 1.6; }
+
+  /* ===== DOC HEADER BAR ===== */
+  .docbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 14px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 26px;
+    background: var(--ink);
+    color: #e8e3d7;
+    font-size: 12.5px;
+    letter-spacing: 0.02em;
+  }
+  .docbar b { color: #fff; font-weight: 700; }
+  .docbar .tag {
+    background: var(--seal);
+    color: #fff;
+    font-weight: 700;
+    padding: 2px 10px;
+    border-radius: 3px;
+    font-size: 12px;
   }
 
   /* ===== HERO ===== */
   .hero {
     position: relative;
-    background: linear-gradient(135deg, #0d4f3c 0%, #1a7a5e 60%, #2a9d7f 100%);
-    color: #fff;
-    padding: 48px 28px 44px;
-    text-align: center;
+    padding: 40px 26px 34px;
+    background:
+      linear-gradient(180deg, #fbfaf6 0%, #fff 100%);
+    border-bottom: 1px solid var(--rule);
     overflow: hidden;
   }
-  .hero::after {
-    content: "";
-    position: absolute;
-    bottom: -1px; left: 0; right: 0;
-    height: 40px;
-    background: #fff;
-    clip-path: polygon(0 100%, 100% 100%, 100% 0, 50% 60%, 0 0);
-  }
-  .hero .badge {
-    display: inline-block;
-    background: rgba(255,255,255,0.18);
-    border: 1px solid rgba(255,255,255,0.35);
-    padding: 6px 16px;
-    border-radius: 30px;
+  .hero .case {
     font-size: 13px;
-    letter-spacing: 1px;
-    margin-bottom: 18px;
-    backdrop-filter: blur(4px);
+    color: var(--muted);
+    margin-bottom: 14px;
+    font-weight: 500;
   }
   .hero h1 {
-    font-size: 30px;
-    font-weight: 800;
-    line-height: 1.35;
-    margin-bottom: 14px;
+    font-family: var(--serif);
+    font-size: 31px;
+    font-weight: 900;
+    line-height: 1.32;
     letter-spacing: -0.5px;
+    text-wrap: balance;
+    margin-bottom: 16px;
   }
-  .hero .sub {
-    font-size: 16px;
-    opacity: 0.95;
-    font-weight: 400;
-  }
-  .hero .discount {
-    display: inline-block;
-    margin-top: 22px;
-    background: #ff5252;
-    color: #fff;
-    font-size: 22px;
-    font-weight: 800;
-    padding: 10px 28px;
-    border-radius: 12px;
-    box-shadow: 0 6px 20px rgba(255,82,82,0.4);
-  }
-
-  /* ===== SECTION ===== */
-  .section { padding: 34px 28px; border-bottom: 1px solid #eef0f2; }
-  .section:last-child { border-bottom: none; }
-  .section-title {
-    font-size: 21px;
-    font-weight: 800;
-    margin-bottom: 20px;
+  .hero h1 .red { color: var(--seal); }
+  .hero .sub { font-size: 16px; color: var(--ink-2); max-width: 36em; }
+  .hero .sub strong { color: var(--ink); }
+  .hero-row {
     display: flex;
-    align-items: center;
-    gap: 10px;
-    letter-spacing: -0.5px;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: space-between;
   }
-  .section-title .icon { font-size: 24px; }
-  .section-title.green { color: #0d4f3c; }
-  .section-title.red { color: #d32f2f; }
-
-  /* ===== KEY POINTS ===== */
-  .keypoints {
-    display: grid;
-    gap: 14px;
-  }
-  .kp {
-    background: linear-gradient(135deg, #f0f9f5 0%, #e8f5ee 100%);
-    border-left: 4px solid #2a9d7f;
+  .stamp {
+    flex-shrink: 0;
+    width: 132px;
+    height: 132px;
+    border: 3px solid var(--seal);
     border-radius: 10px;
-    padding: 16px 18px;
-  }
-  .kp .num {
-    display: inline-flex;
+    color: var(--seal);
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 26px; height: 26px;
-    background: #2a9d7f;
-    color: #fff;
-    border-radius: 50%;
-    font-size: 14px;
-    font-weight: 700;
-    margin-right: 8px;
+    text-align: center;
+    transform: rotate(-7deg);
+    font-family: var(--serif);
+    font-weight: 900;
+    line-height: 1.2;
+    box-shadow: inset 0 0 0 2px #fff, inset 0 0 0 3.5px var(--seal);
+    opacity: 0.92;
+    margin-top: 6px;
   }
-  .kp .kp-title { font-weight: 700; font-size: 16px; color: #0d4f3c; display: inline; }
-  .kp .kp-body { font-size: 14.5px; color: #444; margin-top: 8px; }
+  .stamp .s1 { font-size: 12px; letter-spacing: 0.1em; font-family: var(--sans); font-weight: 700; }
+  .stamp .s2 { font-size: 26px; letter-spacing: -0.5px; margin: 2px 0; }
+  .stamp .s3 { font-size: 13px; }
+  .stamp .s4 { font-size: 10.5px; font-family: var(--sans); font-weight: 500; margin-top: 4px; opacity: 0.85; }
 
-  /* ===== TABLE ===== */
-  .info-table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 14.5px;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 0 0 1px #e6e8ea;
-  }
-  .info-table th, .info-table td {
-    padding: 13px 16px;
-    text-align: left;
-    border-bottom: 1px solid #eef0f2;
-  }
-  .info-table th {
-    background: #f7f9fa;
-    color: #555;
-    font-weight: 600;
-    width: 34%;
-    white-space: nowrap;
-  }
-  .info-table td { font-weight: 500; }
-  .info-table tr:last-child th, .info-table tr:last-child td { border-bottom: none; }
-  .highlight-row td { color: #d32f2f; font-weight: 800; font-size: 16px; }
-  .highlight-row th { background: #fff5f5; }
-
-  /* ===== CALLOUT ===== */
-  .callout {
-    background: #fffbeb;
-    border: 1px solid #fde68a;
-    border-radius: 12px;
-    padding: 18px 20px;
-    margin-top: 16px;
-    font-size: 14.5px;
-  }
-  .callout.red {
-    background: #fef2f2;
-    border-color: #fecaca;
-  }
-  .callout strong { color: #b45309; }
-  .callout.red strong { color: #dc2626; }
-
-  /* ===== SIM ===== */
-  .sim {
-    background: #0d4f3c;
-    border-radius: 14px;
-    padding: 26px 22px;
-    color: #fff;
-  }
-  .sim .step {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    padding: 12px 0;
-  }
-  .sim .step .dot {
-    flex-shrink: 0;
-    width: 34px; height: 34px;
-    background: rgba(255,255,255,0.15);
-    border: 1px solid rgba(255,255,255,0.3);
-    border-radius: 50%;
-    display: flex; align-items: center; justify-content: center;
-    font-weight: 700;
-  }
-  .sim .step .txt { font-size: 15px; }
-  .sim .arrow { text-align: center; color: rgba(255,255,255,0.5); font-size: 18px; line-height: 0.6; }
-  .sim .step.final { background: #2a9d7f; margin: 8px -10px 0; padding: 14px; border-radius: 10px; }
-  .sim .step.final .dot { background: #fff; color: #2a9d7f; }
-  .sim .step.final .txt { font-weight: 700; }
-
-  /* ===== CHECKLIST ===== */
-  .checklist { display: grid; gap: 10px; }
-  .check-item {
-    display: flex;
-    align-items: flex-start;
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
-    background: #f7f9fa;
-    border-radius: 8px;
-    padding: 12px 14px;
-    font-size: 14.5px;
+    margin-top: 26px;
   }
-  .check-item .ck { color: #2a9d7f; font-weight: 800; flex-shrink: 0; }
+  .stat {
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    padding: 14px 12px 12px;
+  }
+  .stat .l { font-size: 12px; color: var(--muted); font-weight: 500; }
+  .stat .v { font-family: var(--serif); font-size: 22px; font-weight: 900; letter-spacing: -0.5px; line-height: 1.2; margin-top: 4px; }
+  .stat .v.red { color: var(--seal); }
+  .stat .v.teal { color: var(--river); }
+  .stat .s { font-size: 11.5px; color: var(--muted); margin-top: 4px; }
 
-  /* ===== TARGET ===== */
-  .target-list { display: grid; gap: 12px; }
-  .target {
-    display: flex;
+  .hero-photo { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; }
+
+  /* ===== BEFORE / AFTER ===== */
+  .ba {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 12px;
-    align-items: flex-start;
-    border: 1px solid #e6e8ea;
+    margin-top: 6px;
+  }
+  .ba .col { border-radius: 10px; padding: 18px 16px; }
+  .ba .before { background: var(--paper); border: 1px solid var(--rule); color: var(--muted); }
+  .ba .after { background: var(--river-soft); border: 1px solid var(--river-line); }
+  .ba .h {
+    font-size: 12px; font-weight: 700; letter-spacing: 0.08em; margin-bottom: 8px;
+  }
+  .ba .before .h { color: var(--muted); }
+  .ba .after .h { color: var(--river); }
+  .ba .d { font-family: var(--serif); font-size: 17px; font-weight: 900; line-height: 1.3; margin-bottom: 10px; }
+  .ba .after .d { color: var(--ink); }
+  .ba ul { list-style: none; display: grid; gap: 7px; font-size: 13.5px; line-height: 1.55; }
+  .ba li { padding-left: 14px; position: relative; }
+  .ba li::before { content: ""; position: absolute; left: 0; top: 9px; width: 6px; height: 6px; border-radius: 50%; background: currentColor; opacity: 0.5; }
+  .ba .after li::before { background: var(--river); opacity: 1; }
+  .ba .after li strong { color: var(--ink); }
+
+  /* ===== BENEFIT CARDS ===== */
+  .benefits { display: grid; gap: 12px; }
+  .benefit {
+    display: grid;
+    grid-template-columns: 56px 1fr;
+    gap: 14px;
+    align-items: start;
+    padding: 18px 18px 18px 14px;
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    background: var(--card);
+  }
+  .benefit .big {
+    font-family: var(--serif);
+    font-size: 15px;
+    font-weight: 900;
+    color: var(--seal);
+    line-height: 1.15;
+    text-align: center;
+    padding-top: 3px;
+    letter-spacing: -0.3px;
+  }
+  .benefit .big small { display: block; font-family: var(--sans); font-size: 10.5px; font-weight: 700; color: var(--muted); letter-spacing: 0.05em; margin-bottom: 2px; }
+  .benefit .t { font-size: 16.5px; font-weight: 700; line-height: 1.35; margin-bottom: 6px; }
+  .benefit .b { font-size: 14px; color: var(--ink-2); line-height: 1.6; }
+  .benefit .b .basis { display: block; margin-top: 6px; font-size: 12.5px; color: var(--muted); }
+
+  /* ===== PARCEL TABLE + BARS ===== */
+  .parcel { display: grid; gap: 14px; margin-top: 6px; }
+  .pr {
+    border: 1px solid var(--rule);
     border-radius: 10px;
     padding: 14px 16px;
   }
-  .target .emoji { font-size: 22px; }
-  .target .t-title { font-weight: 700; font-size: 15px; }
-  .target .t-desc { font-size: 13.5px; color: #666; margin-top: 2px; }
+  .pr.total { background: var(--seal-soft); border-color: var(--seal-line); }
+  .pr .top { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+  .pr .name { font-weight: 700; font-size: 15px; }
+  .pr .name span { font-size: 12px; color: var(--muted); font-weight: 500; margin-left: 6px; }
+  .pr .num { font-family: var(--serif); font-weight: 900; font-size: 18px; color: var(--seal); }
+  .pr .num small { font-family: var(--sans); font-size: 12px; color: var(--muted); font-weight: 500; margin-left: 4px; }
+  .bar { height: 12px; background: var(--paper-2); border-radius: 6px; overflow: hidden; margin: 10px 0 8px; }
+  .bar i { display: block; height: 100%; background: var(--seal); border-radius: 6px; }
+  .pr .legend { display: flex; justify-content: space-between; font-size: 12.5px; color: var(--muted); gap: 8px; flex-wrap: wrap; }
+  .pr .legend b { color: var(--ink); font-weight: 700; }
 
-  /* ===== CTA ===== */
-  .cta {
-    background: linear-gradient(135deg, #0d4f3c 0%, #1a7a5e 100%);
-    color: #fff;
-    text-align: center;
-    padding: 40px 28px;
+  /* ===== TIMELINE ===== */
+  .tl { list-style: none; display: grid; gap: 0; margin-top: 8px; }
+  .tl li {
+    display: grid;
+    grid-template-columns: 28px 1fr;
+    gap: 12px;
+    position: relative;
+    padding-bottom: 18px;
   }
-  .cta h2 { font-size: 24px; font-weight: 800; margin-bottom: 10px; }
-  .cta p { opacity: 0.92; margin-bottom: 24px; font-size: 15px; }
-  .cta-phone {
-    display: inline-block;
-    background: #fff;
-    color: #0d4f3c;
-    font-size: 22px;
-    font-weight: 800;
-    padding: 16px 40px;
-    border-radius: 50px;
-    text-decoration: none;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+  .tl li::before {
+    content: "";
+    position: absolute;
+    left: 13px; top: 26px; bottom: -2px;
+    width: 2px;
+    background: var(--rule);
   }
-  .cta .auction-line { margin-top: 18px; font-size: 14px; opacity: 0.85; }
+  .tl li:last-child::before { display: none; }
+  .tl .dot {
+    width: 28px; height: 28px; border-radius: 50%;
+    border: 2px solid var(--rule);
+    background: var(--card);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 12px; font-weight: 700; color: var(--muted);
+    z-index: 1;
+  }
+  .tl li.done .dot { background: var(--river); border-color: var(--river); color: #fff; }
+  .tl li.now .dot { background: var(--seal); border-color: var(--seal); color: #fff; box-shadow: 0 0 0 5px var(--seal-soft); }
+  .tl .tt { font-weight: 700; font-size: 15px; line-height: 1.4; }
+  .tl li.now .tt { color: var(--seal); }
+  .tl .td { font-size: 13.5px; color: var(--muted); line-height: 1.55; }
+  .tl .when { display: inline-block; font-size: 12px; font-weight: 700; color: var(--river); background: var(--river-soft); padding: 1px 8px; border-radius: 4px; margin-left: 6px; vertical-align: 1px; }
+  .tl li.now .when { color: #fff; background: var(--seal); }
 
-  /* ===== LINK BTN ===== */
-  .link-btn {
+  /* ===== MONEY FLOW ===== */
+  .flow {
+    background: var(--ink);
+    color: #f1ede4;
+    border-radius: 12px;
+    padding: 24px 20px;
+    margin-top: 6px;
+  }
+  .flow .row { display: grid; grid-template-columns: 1fr auto; gap: 10px; align-items: baseline; padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.12); }
+  .flow .row:last-of-type { border-bottom: none; }
+  .flow .k { font-size: 14px; color: #cfc8b9; }
+  .flow .k b { color: #fff; font-weight: 700; }
+  .flow .v { font-family: var(--serif); font-size: 20px; font-weight: 900; letter-spacing: -0.5px; white-space: nowrap; }
+  .flow .v.minus { color: #7fd1c8; }
+  .flow .result { margin-top: 14px; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.18); border-radius: 10px; padding: 14px 16px; }
+  .flow .result .k { color: #e8e3d7; }
+  .flow .result .v { color: #ffd7cf; font-size: 24px; }
+  .flow .result .sub { font-size: 12.5px; color: #cfc8b9; margin-top: 4px; }
+  .compare { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 14px; }
+  .cmp { border: 1px solid var(--rule); border-radius: 10px; padding: 14px; }
+  .cmp .l { font-size: 12.5px; color: var(--muted); }
+  .cmp .v { font-family: var(--serif); font-size: 21px; font-weight: 900; margin-top: 2px; }
+  .cmp .s { font-size: 12.5px; color: var(--muted); margin-top: 2px; }
+
+  /* ===== TABLES ===== */
+  .tbl-wrap { overflow-x: auto; margin-top: 6px; }
+  table.info { width: 100%; border-collapse: collapse; font-size: 14.5px; }
+  table.info th, table.info td { padding: 11px 12px; text-align: left; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  table.info th { width: 32%; color: var(--muted); font-weight: 500; white-space: nowrap; background: #fbfaf6; }
+  table.info tr.key td { color: var(--seal); font-weight: 700; font-size: 16px; }
+  table.hist { width: 100%; border-collapse: collapse; font-size: 13.5px; min-width: 420px; }
+  table.hist th { font-size: 12px; color: var(--muted); font-weight: 500; text-align: left; padding: 8px 10px; border-bottom: 2px solid var(--rule); white-space: nowrap; }
+  table.hist td { padding: 9px 10px; border-bottom: 1px solid var(--rule); white-space: nowrap; }
+  table.hist td.r { text-align: right; }
+  table.hist .pill { display: inline-block; font-size: 11.5px; font-weight: 700; padding: 1px 8px; border-radius: 4px; background: var(--paper-2); color: var(--muted); }
+  table.hist .pill.sold { background: var(--river-soft); color: var(--river); }
+  table.hist .pill.now { background: var(--seal); color: #fff; }
+  table.hist tr.now td { background: var(--seal-soft); font-weight: 700; }
+  table.hist .sub { display: block; font-size: 12px; color: var(--muted); font-weight: 400; white-space: normal; }
+
+  /* ===== CALLOUT ===== */
+  .callout {
+    border-radius: 10px;
+    padding: 16px 18px;
+    margin-top: 16px;
+    font-size: 14px;
+    line-height: 1.65;
+    background: var(--paper);
+    border: 1px solid var(--rule);
+  }
+  .callout.teal { background: var(--river-soft); border-color: var(--river-line); }
+  .callout.red { background: var(--seal-soft); border-color: var(--seal-line); }
+  .callout .h { font-weight: 700; display: block; margin-bottom: 4px; }
+  .callout.red .h { color: var(--seal); }
+  .callout.teal .h { color: var(--river); }
+
+  /* ===== CHECK LIST ===== */
+  .checks { display: grid; gap: 10px; margin-top: 6px; }
+  .check { display: grid; grid-template-columns: 22px 1fr; gap: 10px; align-items: start; padding: 12px 14px; border: 1px solid var(--rule); border-radius: 8px; font-size: 14px; line-height: 1.6; }
+  .check .n { width: 22px; height: 22px; border-radius: 50%; background: var(--ink); color: #fff; font-size: 12px; font-weight: 700; display: flex; align-items: center; justify-content: center; margin-top: 2px; }
+  .check b { display: block; }
+  .check span { color: var(--ink-2); }
+
+  /* ===== POINTS ===== */
+  .points { display: grid; gap: 10px; }
+  .point { display: grid; grid-template-columns: 1fr; gap: 4px; padding: 14px 16px; border-left: 3px solid var(--river); background: #fbfaf6; }
+  .point b { font-size: 15px; }
+  .point span { font-size: 14px; color: var(--ink-2); line-height: 1.6; }
+
+  /* ===== IMAGES ===== */
+  .doc-img { width: 100%; border: 1px solid var(--rule); border-radius: 8px; margin-top: 14px; }
+  .cap { font-size: 12.5px; color: var(--muted); text-align: center; margin-top: 6px; line-height: 1.5; }
+  .gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 14px; }
+  .gallery img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 6px; }
+  .gallery img.wide { grid-column: span 2; aspect-ratio: 16 / 7; }
+  .gallery.docs img { aspect-ratio: 1 / 1.41; object-fit: cover; object-position: top; border: 1px solid var(--rule); background: #fff; }
+  .gallery.docs img.landscape { grid-column: span 2; aspect-ratio: auto; }
+  .btn {
     display: block;
-    background: #03c75a;
-    color: #fff;
     text-align: center;
     text-decoration: none;
     font-weight: 700;
-    padding: 16px;
-    border-radius: 10px;
-    margin-top: 18px;
-    font-size: 15px;
-  }
-
-  /* ===== PRICE DROP ===== */
-  .price-drop {
-    background: linear-gradient(135deg, #fff5f5 0%, #fff0f0 100%);
-    border: 1.5px solid #fecaca;
-    border-radius: 14px;
-    padding: 20px 18px;
-    margin: 20px 0 14px;
-    text-align: center;
-  }
-  .pd-row {
-    display: flex;
-    align-items: baseline;
-    justify-content: center;
-    gap: 10px;
-  }
-  .pd-label { font-size: 14px; color: #777; }
-  .pd-old {
-    font-size: 21px; font-weight: 700; color: #9aa0a6;
-    text-decoration: line-through;
-  }
-  .pd-new { font-size: 30px; font-weight: 900; color: #d32f2f; letter-spacing: -1px; }
-  .pd-arrow {
-    font-size: 12.5px; color: #d32f2f; font-weight: 700;
-    margin: 8px 0;
-  }
-  .pd-badge {
-    display: inline-block;
-    margin-top: 12px;
-    background: #d32f2f;
-    color: #fff;
     font-size: 14.5px;
-    padding: 8px 18px;
-    border-radius: 30px;
-    box-shadow: 0 4px 14px rgba(211,47,47,0.3);
-  }
-  .pd-badge strong { font-size: 16px; }
-
-  /* ===== STAT GRID ===== */
-  .stat-sub { font-size: 11px; color: #aaa; margin-top: 3px; }
-  .stat-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 8px;
-    margin: 18px 0;
-  }
-  .stat {
-    background: #f7f9fa;
-    border: 1px solid #eef0f2;
-    border-radius: 10px;
-    padding: 16px 8px;
-    text-align: center;
-  }
-  .stat-label { font-size: 12.5px; color: #888; margin-bottom: 6px; }
-  .stat-num { font-size: 21px; font-weight: 800; letter-spacing: -0.5px; }
-  .stat-num.gray { color: #9aa0a6; text-decoration: line-through; }
-  .stat-num.red { color: #d32f2f; }
-  .stat-num.green { color: #1a7a5e; }
-
-  /* ===== IMAGES ===== */
-  .hero-photo {
-    width: 100%;
-    aspect-ratio: 4 / 3;
-    object-fit: cover;
-    display: block;
-  }
-  .doc-img {
-    width: 100%;
-    border-radius: 10px;
-    border: 1px solid #e6e8ea;
-    margin-top: 14px;
-    display: block;
-  }
-  .img-caption {
-    font-size: 12.5px;
-    color: #888;
-    text-align: center;
-    margin-top: 6px;
-  }
-  .gallery {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 8px;
-    margin-top: 16px;
-  }
-  .gallery img {
-    width: 100%;
-    aspect-ratio: 4 / 3;
-    object-fit: cover;
+    padding: 14px 16px;
     border-radius: 8px;
-    display: block;
-    cursor: pointer;
+    margin-top: 14px;
+    background: var(--river);
+    color: #fff;
   }
-  .gallery img.wide { grid-column: span 2; aspect-ratio: 16 / 7; }
+  .btn.ghost { background: var(--card); color: var(--river); border: 1.5px solid var(--river); }
 
-  .disclaimer {
-    font-size: 12px;
-    color: #999;
-    padding: 22px 28px;
-    background: #fafbfc;
+  /* ===== CTA ===== */
+  .cta {
+    background: var(--ink);
+    color: #f1ede4;
+    padding: 40px 26px;
     text-align: center;
-    line-height: 1.6;
   }
+  .cta h2 { color: #fff; font-size: 25px; }
+  .cta p { color: #cfc8b9; font-size: 15px; max-width: 32em; margin: 0 auto 18px; }
+  .cta .court { display: inline-block; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.18); border-radius: 8px; padding: 10px 18px; font-size: 14px; color: #fff; }
+  .cta .court b { font-family: var(--serif); font-size: 18px; letter-spacing: 0.02em; }
+  .cta .date { margin-top: 14px; font-size: 13px; color: #cfc8b9; }
 
-  @media (max-width: 480px) {
-    .hero h1 { font-size: 25px; }
-    .section { padding: 28px 20px; }
-    .hero { padding: 40px 20px 40px; }
+  .disclaimer { font-size: 12px; color: var(--muted); padding: 22px 26px 30px; background: var(--paper); line-height: 1.65; }
+  .disclaimer p + p { margin-top: 8px; }
+
+  @media (max-width: 520px) {
+    .section { padding: 30px 18px; }
+    .docbar { padding: 10px 18px; }
+    .hero { padding: 32px 18px 28px; }
+    .hero h1 { font-size: 26px; }
+    .hero-row { flex-direction: column-reverse; gap: 10px; }
+    .stamp { width: 112px; height: 112px; transform: rotate(-6deg); align-self: flex-end; margin-top: -4px; }
+    .stamp .s2 { font-size: 22px; }
+    .stats { grid-template-columns: 1fr 1fr; }
+    .stats .stat:first-child { grid-column: span 2; }
+    .ba { grid-template-columns: 1fr; }
+    .compare { grid-template-columns: 1fr; }
+    .benefit { grid-template-columns: 50px 1fr; gap: 12px; padding: 16px 14px 16px 12px; }
+    .cta { padding: 34px 18px; }
+    .disclaimer { padding: 20px 18px 28px; }
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .stamp { animation: stamp-in 0.5s cubic-bezier(.2,.9,.3,1.2) both; }
+    @keyframes stamp-in { from { transform: rotate(-7deg) scale(1.6); opacity: 0; } to { transform: rotate(-7deg) scale(1); opacity: 0.92; } }
+    @media (max-width: 520px) {
+      @keyframes stamp-in { from { transform: rotate(-6deg) scale(1.6); opacity: 0; } to { transform: rotate(-6deg) scale(1); opacity: 0.92; } }
+    }
   }
 </style>
 </head>
 <body>
-<div class="wrap">
+<div class="page">
+
+  <!-- 공문 헤더 바 -->
+  <div class="docbar">
+    <span><b>한국부동산원</b> 서울권역본부-9743 · 2026.09.29 시행</span>
+    <span class="tag">보상계획 통지 도착</span>
+  </div>
 
   <!-- HERO -->
   <header class="hero">
-    <span class="badge">🏞️ 홍천강 리버뷰 · 국책사업 보상 확정지</span>
-    <h1>2억대에 잡는<br>홍천강 리버뷰 전원주택</h1>
-    <p class="sub">감정가 <strong>5.5억</strong> → 최저가 <strong>1.9억</strong> · 여기에 <strong>토지보상금</strong>까지 더해지는 이중 수익 물건</p>
-    <div class="discount">감정가 대비 34%까지 하락</div>
+    <div class="hero-row">
+      <div>
+        <p class="case">춘천지방법원 2024타경2148 · 강원 홍천군 서면 개야리 322-6 외 1필지</p>
+        <h1>최저가 <span class="red">1억 8,917만원.</span><br>토지보상은 이제 ‘예정’이 아니라 ‘공고’입니다.</h1>
+        <p class="sub">
+          한국부동산원이 <strong>2026년 9월 29일 보상계획을 통지</strong>했습니다. 홍천강 하천정비사업에 편입되는 면적이
+          <strong>385㎡(116.5평)로 필지별 확정</strong>됐고, 집은 편입 목록에 없습니다.
+          감정가 5.5억, 직전 낙찰가 5.1억이었던 집이 지금 1.9억부터 시작합니다.
+        </p>
+      </div>
+      <div class="stamp" aria-label="편입 385제곱미터 확정, 2026년 10월 1일 공고">
+        <span class="s1">편입 확정</span>
+        <span class="s2">385㎡</span>
+        <span class="s3">116.5평</span>
+        <span class="s4">2026.10.01 공고</span>
+      </div>
+    </div>
+
+    <div class="stats">
+      <div class="stat">
+        <div class="l">이번 회차 최저가</div>
+        <div class="v red">1억 8,917만원</div>
+        <div class="s">감정가 5억 5,154만원의 34%</div>
+      </div>
+      <div class="stat">
+        <div class="l">직전 낙찰가</div>
+        <div class="v">5억 1,100만원</div>
+        <div class="s">2026.3.9 · 3명 입찰 · 92.65%</div>
+      </div>
+      <div class="stat">
+        <div class="l">보상 편입 토지</div>
+        <div class="v teal">116.5평</div>
+        <div class="s">전체 493평 중 23.6%</div>
+      </div>
+    </div>
   </header>
 
-  <!-- 대표 사진 -->
-  <img class="hero-photo" src="images/house1.jpg" alt="홍천강 리버뷰 흰색 2층 전원주택 전경">
+  <img class="hero-photo" src="images/house1.jpg" alt="홍천강변 흰색 2층 전원주택 전경">
 
-  <!-- 인트로 -->
+  <!-- 무엇이 달라졌나 -->
   <section class="section">
-    <p style="font-size:15.5px; color:#333;">
-      이건 단순한 경매 물건이 아닙니다.<br>
-      <strong style="color:#0d4f3c;">한국부동산원 공문으로 토지보상이 확정 진행 중인</strong>,
-      "낙찰가 절감"과 "보상금 수령"이 동시에 가능한 <strong>이중 수익 물건</strong>입니다.
+    <span class="eyebrow seal">2026.10 업데이트</span>
+    <h2>이번 공문으로 달라진 것</h2>
+    <p class="lede">
+      지난 2월에는 「보상설명회 안내」였습니다. 이번에는 토지보상법 제15조에 따른
+      <strong>보상계획 공고</strong>입니다. 어느 필지가 몇 ㎡ 편입되는지 개별조서로 적혀 왔고,
+      감정평가와 협의로 이어지는 법정 절차가 시작됐습니다.
     </p>
-
-    <!-- 가격 하락 임팩트 -->
-    <div class="price-drop">
-      <div class="pd-row">
-        <span class="pd-label">감정가</span>
-        <span class="pd-old">5억 5,153만원</span>
+    <div class="ba">
+      <div class="col before">
+        <div class="h">2026.02 · 설명회 안내</div>
+        <div class="d">“보상 예정”</div>
+        <ul>
+          <li>사업 설명회 개최 안내 수준</li>
+          <li>편입 면적은 “약 100평” 추정</li>
+          <li>필지별 편입 내역 없음</li>
+          <li>절차 일정 미정</li>
+        </ul>
       </div>
-      <div class="pd-arrow">↓ &nbsp;5차까지 유찰, 가격 폭락 &nbsp;↓</div>
-      <div class="pd-row">
-        <span class="pd-label">현재 최저가</span>
-        <span class="pd-new">1억 8,917만원</span>
+      <div class="col after">
+        <div class="h">2026.10 · 보상계획 공고</div>
+        <div class="d">“편입 385㎡ 확정”</div>
+        <ul>
+          <li><strong>토지보상법 제15조</strong> 보상계획 공고·열람</li>
+          <li>편입 <strong>385㎡(116.5평)</strong> 필지별 명시</li>
+          <li>건물은 편입 목록에 <strong>없음</strong></li>
+          <li>열람·이의 <strong>10.1 ~ 10.16</strong> → 감정평가 → 협의</li>
+        </ul>
       </div>
-      <div class="pd-badge">감정가의 <strong>34%</strong> · <strong>3억 6천만원</strong> 빠졌습니다</div>
     </div>
+    <p class="note" style="margin-top:12px;">
+      출처: 한국부동산원 「보상계획 통지(홍천강 개야1지구 하천정비사업)」 2026.09.29, 붙임 보상계획공고문·개별조서. 원본은 아래 「공문 원본」에 있습니다.
+    </p>
+  </section>
 
-    <!-- 한눈에 보는 숫자 -->
-    <div class="stat-grid">
-      <div class="stat"><div class="stat-label">토지 평단가</div><div class="stat-num gray">112만원</div><div class="stat-sub">감정 기준</div></div>
-      <div class="stat"><div class="stat-label">실질 평단가</div><div class="stat-num red">약 38만원</div><div class="stat-sub">최저가 기준</div></div>
-      <div class="stat"><div class="stat-label">예상 토지보상</div><div class="stat-num green">6천~1억</div><div class="stat-sub">별도 수령</div></div>
+  <!-- 낙찰자에게 돌아오는 것 -->
+  <section class="section tinted">
+    <span class="eyebrow">낙찰자의 이익</span>
+    <h2>이 집을 낙찰받으면 무엇을 얻는가</h2>
+    <div class="benefits">
+      <div class="benefit">
+        <div class="big"><small>보상금</small>약<br>7,500만</div>
+        <div>
+          <div class="t">편입 116.5평에 대한 토지보상금을 받습니다</div>
+          <div class="b">
+            보상액은 2인 이상 감정평가법인이 평가한 금액의 산술평균으로 정해지고, 보상계약 후 소유권 이전과 함께 지급됩니다.
+            <span class="basis">추정 근거: 토지 감정평가액 약 3.2억 × 편입 비율 23.6% ≈ 7,560만원. 보상 감정평가 결과에 따라 6천만~1억 범위에서 달라질 수 있습니다.</span>
+          </div>
+        </div>
+      </div>
+      <div class="benefit">
+        <div class="big"><small>건물</small>편입<br>없음</div>
+        <div>
+          <div class="t">집은 그대로 남고, 강변 쪽 땅 일부만 내줍니다</div>
+          <div class="b">
+            개별조서에 올라온 건 토지 2필지뿐입니다. 건물 336㎡(101.7평)는 편입 대상이 아니고,
+            집이 앉은 대지 995㎡ 중 편입은 76㎡(7.6%)입니다. 편입 후에도 대지 919㎡(278평)와 전 326㎡(98.6평)가 남습니다.
+          </div>
+        </div>
+      </div>
+      <div class="benefit">
+        <div class="big"><small>진입가</small>감정가<br>34%</div>
+        <div>
+          <div class="t">시장이 5.1억으로 값을 매긴 집을 1.9억부터</div>
+          <div class="b">
+            3차에서 7명, 4차에서 3명이 입찰했고 4차 낙찰가는 5억 1,100만원(감정가 92.65%)이었습니다.
+            두 번 모두 낙찰자 사정(대금 미납, 농취증 미제출)으로 무효가 됐을 뿐, 물건의 하자가 아닙니다.
+            그 덕에 최저가는 1억 8,917만원까지 내려왔습니다.
+          </div>
+        </div>
+      </div>
+      <div class="benefit">
+        <div class="big"><small>권리</small>임차인<br>없음</div>
+        <div>
+          <div class="t">명도 다툼 없이 바로 쓸 수 있습니다</div>
+          <div class="b">
+            소유자 거주 외 임차인·점유자가 없어 낙찰 후 명도 부담이 없습니다.
+            보상 협의의 상대방은 계약 시점의 토지 소유자이므로, 낙찰·잔금으로 소유권을 가져오면 협의 상대는 낙찰자가 됩니다.
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
 
+  <!-- 편입 필지 상세 -->
+  <section class="section">
+    <span class="eyebrow">개별조서 기준</span>
+    <h2>어느 땅이 얼마나 편입되나</h2>
+    <p class="lede">개별조서(구분번호 1,104·1,105)에 적힌 숫자 그대로입니다. 전체 토지 1,630㎡ 가운데 385㎡가 홍천강 하천정비 구역에 들어갑니다.</p>
+    <div class="parcel">
+      <div class="pr">
+        <div class="top">
+          <div class="name">개야리 322-10 <span>지목 전(田)</span></div>
+          <div class="num">309㎡<small>편입</small></div>
+        </div>
+        <div class="bar"><i style="width:48.7%"></i></div>
+        <div class="legend"><span>전체 <b>635㎡</b> (192.1평)</span><span>편입 <b>48.7%</b></span><span>잔여 <b>326㎡</b> (98.6평)</span></div>
+      </div>
+      <div class="pr">
+        <div class="top">
+          <div class="name">개야리 322-6 <span>지목 대(垈) · 주택 부지</span></div>
+          <div class="num">76㎡<small>편입</small></div>
+        </div>
+        <div class="bar"><i style="width:7.6%"></i></div>
+        <div class="legend"><span>전체 <b>995㎡</b> (301.0평)</span><span>편입 <b>7.6%</b></span><span>잔여 <b>919㎡</b> (278.0평)</span></div>
+      </div>
+      <div class="pr total">
+        <div class="top">
+          <div class="name">합계</div>
+          <div class="num">385㎡<small>116.5평</small></div>
+        </div>
+        <div class="bar"><i style="width:23.6%"></i></div>
+        <div class="legend"><span>전체 <b>1,630㎡</b> (493.1평)</span><span>편입 <b>23.6%</b></span><span>잔여 <b>1,245㎡</b> (376.6평)</span></div>
+      </div>
+    </div>
+    <img class="doc-img" src="images/notice-2026-10-schedule.jpg" alt="한국부동산원 개별조서: 322-10 전 635㎡ 중 309㎡ 편입, 322-6 대 995㎡ 중 76㎡ 편입">
+    <p class="cap">▲ 개별조서 원본 (2026.10.01). 322-10 전 309㎡ · 322-6 대 76㎡ 편입, 관계인란에 근저당권자 기재</p>
     <div class="callout">
-      바로 <strong>위 단독주택</strong>은 지금 네이버 부동산에 <strong>매매 4억 5,000만원</strong>(평당 약 350만원)에 올라와 있습니다.<br>
-      <strong style="color:#0d4f3c;">위는 4.5억, 이 물건은 2억대 낙찰 가능</strong> — 같은 입지에서 이 가격 차이가 곧 안전마진입니다.
+      <span class="h">지목이 ‘전’인 땅은 농지취득자격증명이 필요합니다</span>
+      322-10(635㎡, 192평)은 지목이 전입니다. 4차 낙찰이 무효가 된 이유가 바로 이 농취증 미제출이었습니다.
+      주말·체험영농 목적은 1,000㎡ 미만이면 신청 요건이 되므로, 매각결정기일 전에 홍천군 서면 행정복지센터에서 발급받아 제출하면 됩니다.
     </div>
-    <a class="link-btn" href="https://new.land.naver.com/houses?ms=2AQVYP,3zIJp0,18&a=DDDGG:JWJT:SGJT:VL&e=RETAIL&articleNo=2624054306" target="_blank">
-      🟢 네이버페이 부동산에서 위 주택 시세 확인
-    </a>
-    <img class="doc-img" src="images/naver-land.png" alt="네이버페이 부동산 - 바로 위 단독주택 매매 4억 5,000만원">
-    <p class="img-caption">▲ 경매 물건 바로 위 단독주택, 네이버 부동산 매매 4억 5,000만원 (평당 약 350만원)</p>
+  </section>
+
+  <!-- 보상 절차 -->
+  <section class="section tinted">
+    <span class="eyebrow">보상 절차</span>
+    <h2>지금 어느 단계에 와 있나</h2>
+    <p class="lede">공고문에 적힌 절차를 순서대로 옮겼습니다. 현재는 두 번째 단계, 열람·이의제기 기간입니다.</p>
+    <ol class="tl">
+      <li class="done">
+        <div class="dot">✓</div>
+        <div><div class="tt">보상설명회 <span class="when">2026.02.10</span></div><div class="td">한국부동산원 공익보상2부 · 홍천군 서면 행정복지센터</div></div>
+      </li>
+      <li class="now">
+        <div class="dot">2</div>
+        <div><div class="tt">보상계획 공고·열람 <span class="when">2026.10.01 ~ 10.16</span></div><div class="td">토지보상법 제15조. 소유자·관계인은 열람 기간 내 서면·팩스로 이의 가능. 이의 없으면 조서대로 보상 진행.</div></div>
+      </li>
+      <li>
+        <div class="dot">3</div>
+        <div><div class="tt">감정평가</div><div class="td">2인 이상 감정평가법인 평가액의 산술평균. 토지소유자는 열람 만료일로부터 30일 안(11.15까지)에 감정평가법인 1곳을 추천할 수 있습니다.</div></div>
+      </li>
+      <li>
+        <div class="dot">4</div>
+        <div><div class="tt">보상액 산정 · 협의 요청</div><div class="td">보상금은 손실보상협의요청서와 함께 우편으로 개별 통지됩니다.</div></div>
+      </li>
+      <li>
+        <div class="dot">5</div>
+        <div><div class="tt">협의 계약 → 소유권 이전 → 보상금 지급</div><div class="td">보상계약 체결 후 편입 토지 소유권을 이전하면 지급됩니다.</div></div>
+      </li>
+      <li>
+        <div class="dot">6</div>
+        <div><div class="tt">협의가 안 되면 수용재결</div><div class="td">재결보상금 지급 또는 공탁 → 이의재결·소송. 협의보다 늦지만 보상 자체가 사라지진 않습니다.</div></div>
+      </li>
+    </ol>
+    <div class="callout teal">
+      <span class="h">사업 개요 (공고문)</span>
+      홍천강 개야1지구 하천정비사업 · 사업시행자 기후에너지환경부 원주지방환경청장 · 보상 수탁기관 한국부동산원.
+      국가하천 홍천강 L=3.449km, 축제(제방) L=3.515km, 라멘교 1개소, 배수시설 21개소.
+      사업기간은 착수일 2025.08.01부터 48개월입니다.
+    </div>
+  </section>
+
+  <!-- 돈의 구조 -->
+  <section class="section">
+    <span class="eyebrow">숫자로 보기</span>
+    <h2>낙찰가에서 보상금을 빼면</h2>
+    <div class="flow">
+      <div class="row"><div class="k">낙찰가 <b>(최저가 기준)</b></div><div class="v">1억 8,917만원</div></div>
+      <div class="row"><div class="k">토지보상금 <b>(편입 385㎡ 추정)</b></div><div class="v minus">− 약 7,500만원</div></div>
+      <div class="result">
+        <div class="row" style="border:none; padding:0;"><div class="k">실질 취득원가</div><div class="v">약 1억 1,400만원</div></div>
+        <div class="sub">남는 것: 건물 101.7평 + 토지 376.6평 (홍천강변 대지 278평 포함)</div>
+      </div>
+    </div>
+    <p class="note" style="margin-top:10px;">낙찰가 2억 2천만원이면 실질 취득원가는 약 1억 4,500만원입니다. 보상금은 보상 감정평가 후 확정되며, 위 수치는 공개 정보 기반 추정입니다.</p>
+
+    <h3>같은 동네에서 비교하면</h3>
+    <div class="compare">
+      <div class="cmp"><div class="l">이 물건 직전 낙찰가 (2026.3.9)</div><div class="v">5억 1,100만원</div><div class="s">3명 입찰 · 감정가 92.65% · 농취증 미제출로 불허가</div></div>
+      <div class="cmp"><div class="l">바로 위 단독주택 네이버 매물</div><div class="v">4억 5,000만원</div><div class="s">평당 약 350만원 · 매매 호가</div></div>
+    </div>
+    <a class="btn ghost" href="https://new.land.naver.com/houses?ms=2AQVYP,3zIJp0,18&a=DDDGG:JWJT:SGJT:VL&e=RETAIL&articleNo=2624054306" target="_blank" rel="noopener">네이버 부동산에서 위 주택 시세 확인</a>
+    <img class="doc-img" src="images/naver-land.png" alt="네이버 부동산: 경매 물건 바로 위 단독주택 매매 4억 5,000만원">
   </section>
 
   <!-- 물건 개요 -->
-  <section class="section">
-    <h2 class="section-title green"><span class="icon">📍</span>물건 개요</h2>
-    <div class="callout" style="margin-top:0; margin-bottom:18px; background:#f0f9f5; border-color:#bfe6d4;">
-      <strong style="color:#0d4f3c;">💡 가격이 더 떨어진 이유 = 정보 있는 사람의 기회</strong><br>
-      이전 낙찰자가 <strong>개인 사정</strong>으로 농취증을 미납해 불허가되면서 한 차례 더 유찰됐습니다.
-      <strong>물건 자체의 하자가 아닙니다.</strong> 전(田) 192평만 농취증을 받으면 되고 발급에 문제 없습니다
-      (주말농장 목적, 300평 이하라 발급 용이).<br>
-      <span style="font-size:13px; color:#0d4f3c;">→ 남들이 놓친 한 박자가 곧 더 낮은 진입가입니다. (단, 미납 물건이라 입찰 보증금 20% 준비 필요)</span>
+  <section class="section tinted">
+    <span class="eyebrow">경매 정보</span>
+    <h2>물건 개요</h2>
+    <div class="tbl-wrap">
+      <table class="info">
+        <tr><th>사건번호</th><td>2024타경2148 · 춘천지방법원 본원 · 부동산임의경매</td></tr>
+        <tr><th>소재지</th><td>강원특별자치도 홍천군 서면 개야리 322-6 외 1필지 (개야강변길 12)</td></tr>
+        <tr><th>물건종별</th><td>주택 · 토지·건물 일괄매각 (제시외 건물 포함)</td></tr>
+        <tr><th>감정가</th><td>551,536,340원</td></tr>
+        <tr class="key"><th>최저가</th><td>189,177,000원 (감정가 34%)</td></tr>
+        <tr><th>입찰보증금</th><td>37,835,400원 (최저가의 20%, 재매각 물건)</td></tr>
+        <tr><th>토지면적</th><td>1,630㎡ (493.08평) · 대 995㎡ + 전 635㎡</td></tr>
+        <tr><th>건물면적</th><td>336.08㎡ (101.66평)</td></tr>
+        <tr><th>용도지역</th><td>계획관리지역</td></tr>
+        <tr><th>매각기일</th><td>법원 공고 확인 · 경매 2계 033-259-9710</td></tr>
+      </table>
     </div>
-    <table class="info-table">
-      <tr><th>사건번호</th><td>2024타경2148 (춘천지방법원 본원)</td></tr>
-      <tr><th>소재지</th><td>강원특별자치도 홍천군 서면 개야리 322-6 외 1필지</td></tr>
-      <tr><th>물건종별</th><td>주택 (토지·건물 일괄매각)</td></tr>
-      <tr><th>감정가</th><td>551,536,340원 (토지 평당 112만원)</td></tr>
-      <tr class="highlight-row"><th>5차 최저가</th><td>189,177,000원 (감정가 34%)</td></tr>
-      <tr><th>보증금</th><td>37,835,499원 (최저가 20%)</td></tr>
-      <tr><th>토지면적</th><td>1,630㎡ (493.08평)</td></tr>
-      <tr><th>건물면적</th><td>336.08㎡ (101.66평)</td></tr>
-      <tr><th>매각기일</th><td>2026.06.15(月) 10:00</td></tr>
-      <tr><th>경매 담당</th><td>경매 2계 (033-259-9710)</td></tr>
-    </table>
-    <img class="doc-img" src="images/auction-detail.png" alt="옥션원 경매 상세 정보 - 2024타경2148 춘천지방법원">
-    <p class="img-caption">▲ 경매 상세 정보 (2024타경2148, 춘천지방법원) — 감정가·입찰 이력</p>
+
+    <h3>입찰 이력</h3>
+    <div class="tbl-wrap">
+      <table class="hist">
+        <thead><tr><th>회차</th><th>매각기일</th><th style="text-align:right">최저매각가격</th><th>결과</th></tr></thead>
+        <tbody>
+          <tr><td>1차</td><td>2025.01.20</td><td class="r">551,536,340원</td><td><span class="pill">유찰</span></td></tr>
+          <tr><td>2차</td><td>2025.02.24</td><td class="r">386,075,000원</td><td><span class="pill">유찰</span></td></tr>
+          <tr><td>3차</td><td>2025.03.31</td><td class="r">270,253,000원</td><td><span class="pill sold">매각</span><span class="sub">3억 4,810만원 (63.1%) · 7명 · 대금 미납</span></td></tr>
+          <tr><td>4차</td><td>2026.03.09</td><td class="r">270,253,000원</td><td><span class="pill sold">매각</span><span class="sub">5억 1,100만원 (92.65%) · 3명 · 농취증 미제출로 불허가</span></td></tr>
+          <tr><td>5차</td><td>2026.05.11</td><td class="r">270,253,000원</td><td><span class="pill">유찰</span></td></tr>
+          <tr class="now"><td>6차~</td><td>법원 공고 확인</td><td class="r">189,177,000원</td><td><span class="pill now">현재 최저가</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <img class="doc-img" src="images/auction-detail.png" alt="옥션원 경매 상세: 2024타경2148 감정가·최저가·입찰 이력">
+    <p class="cap">▲ 경매 상세 정보 (옥션원) — 감정가 5억 5,154만원, 최저가 1억 8,917만원, 입찰 이력</p>
   </section>
 
-  <!-- 입지 장점 -->
+  <!-- 입지 -->
   <section class="section">
-    <h2 class="section-title green"><span class="icon">🏡</span>왜 이 입지가 돈이 되는가</h2>
-    <div class="keypoints">
-      <div class="kp">
-        <span class="num">1</span><span class="kp-title">홍천강 바로 앞 — 돈 주고도 못 사는 리버뷰</span>
-        <div class="kp-body">
-          뒤에는 산, 앞에는 강. <strong>배산임수 명당</strong>에 사계절 자연을 품은 입지입니다.
-          개야리 유원지가 인근이라 캠핑·물놀이·레저가 코앞 — <strong>서울 잠실 기준 약 1시간</strong>,
-          세컨하우스·펜션 운영지로도 수요가 탄탄합니다.
-        </div>
-      </div>
-      <div class="kp">
-        <span class="num">2</span><span class="kp-title">임차인 없음 — 명도 분쟁 리스크 ZERO</span>
-        <div class="kp-body">
-          집주인 거주 외 특이사항 없어 <strong>낙찰 후 명도 스트레스가 없습니다.</strong>
-          경매 초보도 부담 없이 접근할 수 있는 깔끔한 권리관계.
-        </div>
-      </div>
-      <div class="kp">
-        <span class="num">3</span><span class="kp-title">대지 493평 · 건물 100평의 넉넉한 규모</span>
-        <div class="kp-body">
-          토지 1,630㎡(493평) · 건물 336㎡(101평, 부속 창고·차고 포함).<br>
-          <strong>2억대에 강원도 홍천강변 100평 주택</strong> — 같은 가격으로 수도권에선 상상하기 어려운 규모입니다.
-        </div>
-      </div>
+    <span class="eyebrow">입지</span>
+    <h2>홍천강 앞, 산 뒤, 대지 300평</h2>
+    <div class="points">
+      <div class="point"><b>홍천강이 바로 앞입니다</b><span>서쪽으로 홍천강, 동쪽으로 개야로(포장 2차선)에 접합니다. 개야리 유원지가 인근이라 캠핑·물놀이 수요가 있고, 서울 잠실에서 차로 약 1시간입니다.</span></div>
+      <div class="point"><b>흰색 2층 주택 101평, 마당 넓은 대지 301평</b><span>박공지붕 서양식 주택에 창고·차고가 딸려 있습니다. 현황조사서상 서재·현관·가추 등 제시외 건물도 일괄매각에 포함됩니다.</span></div>
+      <div class="point"><b>정비사업 뒤에는 제방이 생깁니다</b><span>공고된 사업 내용은 제방 3.5km와 배수시설 21개소 설치입니다. 강변 땅 일부를 내주는 대신, 남는 땅은 정비된 하천 옆에 놓이게 됩니다.</span></div>
     </div>
     <div class="gallery">
       <img src="images/house2.jpg" alt="전원주택 전경 2">
@@ -471,102 +707,66 @@
       <img src="images/house6.jpg" alt="전원주택 주변 환경">
       <img class="wide" src="images/house7.jpg" alt="전원주택 자연환경 파노라마">
     </div>
-    <p class="img-caption">▲ 흰색 2층 단독주택 · 서양식 박공지붕 · 넓은 마당 · 울창한 자연환경</p>
+    <p class="cap">▲ 흰색 2층 단독주택 · 서양식 박공지붕 · 넓은 마당</p>
   </section>
 
-  <!-- 핵심 투자 포인트 -->
-  <section class="section" style="background:#fffdf5;">
-    <h2 class="section-title red"><span class="icon">🔥</span>이 물건의 진짜 가치<br>— 국책사업 토지보상</h2>
-    <p style="font-size:15px; color:#444; margin-bottom:18px;">
-      대부분의 경매 물건은 "싸게 사는 것"이 전부입니다. 그런데 이 물건은
-      <strong style="color:#d32f2f;">사고 난 뒤 보상금이 들어오는 구조</strong>입니다.
-      추측이 아니라 <strong>한국부동산원 공문</strong>으로 확인된 사실입니다.
-    </p>
+  <!-- 공문 원본 -->
+  <section class="section tinted">
+    <span class="eyebrow">근거 자료</span>
+    <h2>공문 원본</h2>
+    <p class="lede">추측이 아니라 문서입니다. 2026년 10월 보상계획 통지 4장과 2월 설명회 공문, 지적도를 그대로 올립니다.</p>
+    <h3>2026.09.29 보상계획 통지 (한국부동산원)</h3>
+    <div class="gallery docs">
+      <img src="images/notice-2026-10-p1.jpg" alt="한국부동산원 보상계획 통지 공문 1쪽: 열람기간 2026.10.1~10.16, 이의신청 안내">
+      <img src="images/notice-2026-10-p2.jpg" alt="보상계획열람·공고 1쪽: 공익사업 개요, 보상대상, 열람 및 이의제기 기간">
+      <img src="images/notice-2026-10-p3.jpg" alt="보상계획열람·공고 2쪽: 보상방법 및 절차, 감정평가법인 추천">
+      <img class="landscape" src="images/notice-2026-10-schedule.jpg" alt="개별조서: 322-10 전 309㎡, 322-6 대 76㎡ 편입">
+    </div>
+    <p class="cap">▲ 공문 1쪽 · 공고문 2쪽 · 개별조서. 문의처 한국부동산원 서울보상2사업단 02-2055-1911</p>
 
+    <h3>2026.02 보상설명회 안내 공문</h3>
+    <div class="gallery docs">
+      <img src="images/doc1.png" alt="한국부동산원 보상설명회 안내 공문 1">
+      <img src="images/doc2.png" alt="한국부동산원 보상설명회 안내 공문 2">
+    </div>
+
+    <h3>편입 위치 · 지적도</h3>
     <div class="gallery">
-      <img src="images/doc1.png" alt="한국부동산원 토지보상 공문 1">
-      <img src="images/doc2.png" alt="한국부동산원 토지보상 공문 2">
+      <img src="images/cadastral1.png" alt="토지이용규제 확인도: 하천구역 편입 위치">
+      <img src="images/cadastral2.png" alt="위성사진: 322-6, 322-10 편입 현황">
     </div>
-    <p class="img-caption">▲ 한국부동산원 발송 공문 (2026.02) — 홍천강 개야1지구 하천정비사업 보상설명회 안내</p>
-
-    <h3 style="font-size:16px; font-weight:700; margin:22px 0 10px; color:#0d4f3c;">📄 공문 내용 요약</h3>
-    <table class="info-table">
-      <tr><th>발신</th><td>한국부동산원 (공익보상2부)</td></tr>
-      <tr><th>사업명</th><td>홍천강 개야1지구 하천정비사업</td></tr>
-      <tr><th>사업시행자</th><td>기후에너지환경부 원주지방환경청</td></tr>
-      <tr><th>보상설명회</th><td>2026.02.10. 홍천군 서면 형정복지센터 2층</td></tr>
-      <tr><th>출입기간</th><td>2026.02. ~ 사업종료시</td></tr>
-      <tr><th>보상절차</th><td>기본조사 → 감정평가 → 보상액산정 → 보상협의계약</td></tr>
-    </table>
-
-    <h3 style="font-size:16px; font-weight:700; margin:22px 0 10px; color:#0d4f3c;">🗺️ 편입 현황</h3>
-    <div class="gallery">
-      <img src="images/cadastral1.png" alt="토지이용규제 확인도 - 하천구역 편입">
-      <img src="images/cadastral2.png" alt="토지이음 위성사진 - 322-6, 322-10 편입 현황">
-    </div>
-    <p class="img-caption">▲ 토지이용규제 확인도 + 위성사진 — 322-6(대)·322-10(전) 중 약 100평이 홍천강 하천구역 편입</p>
-    <div class="callout">
-      지적도 분석 결과 <strong>322-6(대지), 322-10(전)</strong> 필지가 홍천강 하천구역에 <strong>약 100평 편입</strong> (토지보상 대상)<br><br>
-      · 용도지역: <strong>계획관리지역</strong> (개발 가능성 있는 용도)<br>
-      · 영농여건불리농지 → 전용(轉用) 상대적으로 용이<br>
-      · 좌측(서쪽) 홍천강, 동쪽 개야로(포장 2차선) 접면
-    </div>
-    <div class="callout red">
-      💰 토지 감정평가액 전체 약 <strong>3.2억</strong> 수준<br>
-      하천구역 편입 100평 = 전체 493평 중 약 20% → <strong>보상금 추정 약 6,000만~1억 내외</strong><br>
-      <span style="font-size:12.5px; color:#999;">(실제 보상금은 공식 감정평가 후 확정)</span>
-    </div>
-    <img class="doc-img" src="images/status-note.png" alt="경매 현황위치 및 참고사항 - 하천정비사업 100평 수용보상 예정 제보">
-    <p class="img-caption">▲ 경매 물건 현황·참고사항 — "홍천강 개야1지구 하천정비사업, 100평 수용보상 예정" 관련 제보 명시</p>
+    <p class="cap">▲ 토지이용규제 확인도와 위성사진. 서쪽(강변) 부분이 하천구역에 들어갑니다.</p>
+    <img class="doc-img" src="images/status-note.png" alt="경매 현황·참고사항: 하천정비사업 수용 보상 예정 제보, 농취증 미제출 불허가 사유">
+    <p class="cap">▲ 경매 현황·참고사항 — 하천구역 저촉, 보상 예정 제보, 4차 불허가 사유(농취증 미제출) 기재</p>
   </section>
 
-  <!-- 투자 시뮬레이션 -->
+  <!-- 입찰 전 확인 -->
   <section class="section">
-    <h2 class="section-title green"><span class="icon">💰</span>돈이 도는 구조, 한눈에</h2>
-    <div class="sim">
-      <div class="step"><span class="dot">1</span><span class="txt">경매 낙찰 <strong>2억~2억5천</strong> 수준</span></div>
-      <div class="arrow">▼</div>
-      <div class="step"><span class="dot">2</span><span class="txt">전원주택 실거주 또는 임대·펜션 활용</span></div>
-      <div class="arrow">▼</div>
-      <div class="step"><span class="dot">3</span><span class="txt">홍천강 하천정비사업 보상협의 (공문 진행 중)</span></div>
-      <div class="arrow">▼</div>
-      <div class="step"><span class="dot">4</span><span class="txt">토지 100평 보상금 <strong>약 6천~1억</strong> 수령</span></div>
-      <div class="arrow">▼</div>
-      <div class="step final"><span class="dot">✓</span><span class="txt">실질 취득원가 <strong>1억원대</strong>로 절감</span></div>
-    </div>
-    <p style="font-size:13px; color:#888; margin-top:12px; text-align:center;">
-      ※ 위 수치는 낙찰가·감정평가 가정에 따른 예시입니다. 실제 보상금은 공식 감정평가 후 확정됩니다.
-    </p>
-  </section>
-
-  <!-- 결론 / 타겟 -->
-  <section class="section">
-    <h2 class="section-title green"><span class="icon">📢</span>이런 분이라면, 놓치기 아깝습니다</h2>
-    <div class="target-list">
-      <div class="target"><span class="emoji">📈</span><div><div class="t-title">단기 차익형 투자자</div><div class="t-desc">감정가 34% 낙찰 + 보상금 별도 수령 = 두 번 버는 구조</div></div></div>
-      <div class="target"><span class="emoji">🏡</span><div><div class="t-title">전원 거주 희망자</div><div class="t-desc">보상 전까지 실거주, 이후 보상금으로 취득원가까지 절감</div></div></div>
-      <div class="target"><span class="emoji">🔰</span><div><div class="t-title">소액 경매 입문자</div><div class="t-desc">명도 부담 없고, 국책사업 보상이라 출구전략이 명확</div></div></div>
-      <div class="target"><span class="emoji">🏞️</span><div><div class="t-title">세컨하우스·펜션 투자자</div><div class="t-desc">홍천강 리버뷰 + 보상 안전망까지 갖춘 희소 매물</div></div></div>
-    </div>
-    <div class="callout red" style="margin-top:20px; text-align:center;">
-      <strong style="font-size:16px;">📅 매각기일 2026.06.15(月) 10:00</strong><br>
-      경매는 <strong>기일이 지나면 끝</strong>입니다. 같은 입지·같은 보상 조건의 물건은 다시 나오기 어렵습니다.<br>
-      <strong style="color:#dc2626;">입찰 전 권리분석·현장 확인은 필수 — 지금 상담받으세요.</strong>
+    <span class="eyebrow seal">솔직하게</span>
+    <h2>입찰 전에 확인할 여섯 가지</h2>
+    <div class="checks">
+      <div class="check"><div class="n">1</div><div><b>보상금은 아직 확정액이 아닙니다</b><span>이번 공고는 ‘어느 땅이 편입되는가’를 확정한 것이고, 금액은 감정평가 뒤에 개별 통지됩니다. 7,500만원은 공개 정보로 계산한 추정치입니다.</span></div></div>
+      <div class="check"><div class="n">2</div><div><b>편입 면적은 분할 측량으로 바뀔 수 있습니다</b><span>공고문 자체가 “지번 변경·면적 증감이 있을 수 있다”고 적고 있습니다. 하천법 등 관계 법률에 따라 보상 대상에서 제외되는 부분이 생길 수도 있습니다.</span></div></div>
+      <div class="check"><div class="n">3</div><div><b>농취증을 매각결정기일 전에 내야 합니다</b><span>전 635㎡가 포함된 물건입니다. 4차 낙찰자가 이걸 못 내서 5.1억 낙찰이 무효가 됐습니다.</span></div></div>
+      <div class="check"><div class="n">4</div><div><b>입찰보증금은 최저가의 20%입니다</b><span>대금 미납 이력이 있는 재매각 물건이라 10%가 아니라 20%, 3,783만 5,400원을 준비해야 합니다.</span></div></div>
+      <div class="check"><div class="n">5</div><div><b>경계와 제시외 건물은 현장에서 보세요</b><span>현황조사서에 “인접지와 지적경계 불명확”, “제시외 가추 약 50㎡·27㎡ 등” 기재가 있습니다. 모두 일괄매각에 포함됩니다.</span></div></div>
+      <div class="check"><div class="n">6</div><div><b>보상 시점과 낙찰 시점을 맞춰 보세요</b><span>보상금은 계약 시점의 소유자에게 갑니다. 잔금 납부로 소유권을 가져오는 때와 보상 협의 통지 시점을 경매계·한국부동산원에 확인하세요.</span></div></div>
     </div>
   </section>
 
   <!-- CTA -->
   <section class="cta">
-    <h2>지금 바로 문의하세요</h2>
-    <p>현장 안내 · 권리분석 · 입찰 전략까지 1:1로 도와드립니다</p>
-    <div class="auction-line">경매 담당: 춘천지방법원 경매 2계 · 033-259-9710</div>
+    <span class="eyebrow" style="color:#7fd1c8;">입찰 준비</span>
+    <h2>서류는 다 올렸습니다. 남은 건 현장입니다.</h2>
+    <p>공문 4장, 개별조서, 입찰 이력까지 이 페이지에 그대로 있습니다. 입찰 전 권리분석과 현장 확인은 직접, 또는 전문가와 함께 하세요.</p>
+    <div class="court">춘천지방법원 경매 2계 <b>033-259-9710</b></div>
+    <div class="date">보상 문의: 한국부동산원 서울보상2사업단 02-2055-1911 · 원주지방환경청 033-760-6497</div>
   </section>
 
-  <p class="disclaimer">
-    본 자료는 공개된 경매 정보 및 한국부동산원 보상 공문을 바탕으로 작성된 홍보용 자료입니다.<br>
-    실제 보상금·편입 면적·권리관계는 공식 감정평가 및 측량 결과에 따라 달라질 수 있으며,
-    입찰 전 반드시 현장 확인 및 전문가 권리분석을 권장합니다.
-  </p>
+  <div class="disclaimer">
+    <p>본 페이지는 공개된 경매 정보(춘천지방법원 2024타경2148)와 한국부동산원 보상계획 통지(2026.09.29, 서울권역본부-9743) 및 붙임 공고문·개별조서를 바탕으로 작성한 안내 자료입니다.</p>
+    <p>보상금 추정액, 실질 취득원가, 평당 환산 등은 공개 정보로 계산한 예시이며 실제 보상금은 보상 감정평가 후 확정됩니다. 편입 면적·권리관계·매각기일은 법원 공고와 공식 문서로 반드시 확인하시고, 입찰 전 현장 확인과 전문가 권리분석을 권합니다.</p>
+  </div>
 
 </div>
 </body>
